@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'laxtech_db',
         'USER': 'postgres',
-        'PASSWORD': 'derferger',
+        'PASSWORD': '2024$Laxtech',
         'HOST': '127.0.0.1',
        'PORT': '5432',
     }    
