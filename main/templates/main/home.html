@@ -52,7 +52,7 @@
                 <div class="row align-items-center">
                     <div class="col-xl-2 col-lg-3 col-6">
                         <div class="tp-logo">
-                            <a href="index.html">
+                            <a href="{% url  'home' %}">
                                 <img src="/static/assets/img/logo/logo.png" alt="" />
                             </a>
                         </div>
@@ -118,7 +118,7 @@
                 <button class="close-btn"><i class="fal fa-times"></i></button>
             </div>
             <div class="tpoffcanvas__logo">
-                <a href="index.html">
+                <a href="{% url  'home' %}">
                     <img src="/static/assets/img/logo/logo-white.png" alt="" />
                 </a>
             </div>
@@ -249,7 +249,7 @@
                             </p>
                         </div>
                         <div class="tp-hero__button">
-                            <a class="tp-btn" href="a-propos.html">En savoir plus</a>
+                            <a class="tp-btn" href="{% url  'about' %}">En savoir plus</a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 wow tpfadeRight mt-30" data-wow-duration=".7s" data-wow-delay=".8s" style="
@@ -348,18 +348,18 @@
                             </div>
                             <div class="tp-case-item text-center p-relative">
                                 <div class="tp-case-item__thumb fix">
-                                    <a href="https://www.laxmedical.pro/"><img src="/static/assets/img/case/case-3-3.jpg" alt="" /></a>
+                                    <a href="https://www.medical.laxtech.pro/"><img src="/static/assets/img/case/case-3-3.jpg" alt="" /></a>
                                 </div>
                                 <div class="tp-circle-text">
-                                    <a href="https://www.laxmedical.pro/">Lax Medical</a>
+                                    <a href="https://www.medical.laxtech.pro/">Lax Medical</a>
                                 </div>
                             </div>
                             <div class="tp-case-item text-center p-relative">
                                 <div class="tp-case-item__thumb fix">
-                                    <a href="https://www.laxmarket.store/"><img src="/static/assets/img/case/case-3-4.jpg" alt="" /></a>
+                                    <a href="https://www.market.laxtech.pro/"><img src="/static/assets/img/case/case-3-4.jpg" alt="" /></a>
                                 </div>
                                 <div class="tp-circle-text">
-                                    <a href="https://www.laxmarket.store/">Lax Market</a>
+                                    <a href="https://www.market.laxtech.pro/">Lax Market</a>
                                 </div>
                             </div>
                             <div class="tp-case-item text-center p-relative">
@@ -393,14 +393,14 @@
 
                     <div class="row">
                         <div class="case-button mt-30 text-center">
-                            <a class="tp-btn" href="realisation.html">Toutes Nos Conceptions</a>
+                            <a class="tp-btn" href="{% url  'realisation' %}">Toutes Nos Conceptions</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <br><br><br>
-        <        <div class="tp-service-area service-space-bottom pb-110">
+                <div class="tp-service-area service-space-bottom pb-110">
             <div class="container">
                 <div class="row">
                     <div class="row g-0 justify-content-center">
@@ -417,10 +417,10 @@
                             <div class="tp-service-item mb-20 d-flex justify-content-between">
                                 <div class="tp-service-item__content">
                                     <h4 class="tp-service-sm-title">
-                                        <a href="services.html">Consultance IT (Gratuite)</a>
+                                        <a href="{% url 'services' %}">Consultance IT (Gratuite)</a>
                                     </h4>
                                     <div class="tp-service-item__button-link">
-                                        <a href="services.html">
+                                        <a href="{% url 'services' %}">
                                             <span>
                            <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                              <path d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z" fill="currentColor"></path>
@@ -443,10 +443,10 @@
                             <div class="tp-service-item sv-color-blue-two mb-20 d-flex justify-content-between">
                                 <div class="tp-service-item__content">
                                     <h4 class="tp-service-sm-title">
-                                        <a href="services.html">Maintenance et mise à jour des applications, sites web et logiciels</a>
+                                        <a href="{% url 'services' %}">Maintenance et mise à jour des applications, sites web et logiciels</a>
                                     </h4>
                                     <div class="tp-service-item__button-link">
-                                        <a href="services.html">
+                                        <a href="{% url 'services' %}">
                                             <span>
                            <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                              <path d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z" fill="currentColor"></path>
@@ -483,10 +483,10 @@
                                 <div class="tp-service-item mb-20 d-flex justify-content-between">
                                     <div class="tp-service-item__content">
                                         <h4 class="tp-service-sm-title">
-                                            <a href="services.html">Conception des applications, site web et logiciels</a>
+                                            <a href="{% url 'services' %}">Conception des applications, site web et logiciels</a>
                                         </h4>
                                         <div class="tp-service-item__button-link">
-                                            <a href="services.html">
+                                            <a href="{% url 'services' %}">
                                                 <span>
                              <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                <path d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z" fill="currentColor"></path>
@@ -511,10 +511,10 @@
                                 <div class="tp-service-item sv-color-blue-two mb-20 d-flex justify-content-between">
                                     <div class="tp-service-item__content">
                                         <h4 class="tp-service-sm-title">
-                                            <a href="services.html">Optimisation SEO</a>
+                                            <a href="{% url 'services' %}">Optimisation SEO</a>
                                         </h4>
                                         <div class="tp-service-item__button-link">
-                                            <a href="services.html">
+                                            <a href="{% url 'services' %}">
                                                 <span>
                              <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                <path d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z" fill="currentColor"></path>
@@ -549,10 +549,10 @@
                             <div class="tp-service-item mb-20 d-flex justify-content-between">
                                 <div class="tp-service-item__content">
                                     <h4 class="tp-service-sm-title">
-                                        <a href="services.html">Data Analyse & Automatisation par l’IA</a>
+                                        <a href="{% url 'services' %}">Data Analyse & Automatisation par l’IA</a>
                                     </h4>
                                     <div class="tp-service-item__button-link">
-                                        <a href="services.html">
+                                        <a href="{% url 'services' %}">
                                             <span>
                            <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                              <path d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z" fill="currentColor"></path>
@@ -575,10 +575,10 @@
                             <div class="tp-service-item sv-color-blue-two mb-20 d-flex justify-content-between">
                                 <div class="tp-service-item__content">
                                     <h4 class="tp-service-sm-title">
-                                        <a href="services.html"> Audit et Accompagnement à la transformation numérique</a>
+                                        <a href="{% url 'services' %}"> Audit et Accompagnement à la transformation numérique</a>
                                     </h4>
                                     <div class="tp-service-item__button-link">
-                                        <a href="services.html">
+                                        <a href="{% url 'services' %}">
                                             <span>
                            <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                              <path d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z" fill="currentColor"></path>
@@ -615,10 +615,10 @@
                                 <div class="tp-service-item mb-20 d-flex justify-content-between">
                                     <div class="tp-service-item__content">
                                         <h4 class="tp-service-sm-title">
-                                            <a href="services.html">Développement IOT</a>
+                                            <a href="{% url 'services' %}">Développement IOT</a>
                                         </h4>
                                         <div class="tp-service-item__button-link">
-                                            <a href="services.html">
+                                            <a href="{% url 'services' %}">
                                                 <span>
                              <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                <path d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z" fill="currentColor"></path>
@@ -643,10 +643,10 @@
                                 <div class="tp-service-item sv-color-blue-two mb-20 d-flex justify-content-between">
                                     <div class="tp-service-item__content">
                                         <h4 class="tp-service-sm-title">
-                                            <a href="services.html">Formation Digitale</a>
+                                            <a href="{% url 'services' %}">Formation Digitale</a>
                                         </h4>
                                         <div class="tp-service-item__button-link">
-                                            <a href="services.html">
+                                            <a href="{% url 'services' %}">
                                                 <span>
                              <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                <path d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z" fill="currentColor"></path>
@@ -686,7 +686,7 @@
 
                 <div class="row">
                     <div class="case-button mt-30 text-center">
-                        <a class="tp-btn" href="services.html">Consulter un expert</a>
+                        <a class="tp-btn" href="{% url 'services' %}">Consulter un expert</a>
                     </div>
                 </div>
             </div>
@@ -723,18 +723,18 @@
                         </div>
                         <div class="tp-case-item text-center p-relative">
                             <div class="tp-case-item__thumb fix">
-                                <a href="https://www.laxmedical.pro/"><img src="/static/assets/img/case/case-3-3.jpg" alt="" /></a>
+                                <a href="https://www.medical.laxtech.pro/"><img src="/static/assets/img/case/case-3-3.jpg" alt="" /></a>
                             </div>
                             <div class="tp-circle-text">
-                                <a href="https://www.laxmedical.pro/">Lax Medical</a>
+                                <a href="https://www.medical.laxtech.pro/">Lax Medical</a>
                             </div>
                         </div>
                         <div class="tp-case-item text-center p-relative">
                             <div class="tp-case-item__thumb fix">
-                                <a href="https://www.laxmarket.store/"><img src="/static/assets/img/case/case-3-4.jpg" alt="" /></a>
+                                <a href="https://www.market.laxtech.pro/"><img src="/static/assets/img/case/case-3-4.jpg" alt="" /></a>
                             </div>
                             <div class="tp-circle-text">
-                                <a href="https://www.laxmarket.store/">Lax Market</a>
+                                <a href="https://www.market.laxtech.pro/">Lax Market</a>
                             </div>
                         </div>
                         <div class="tp-case-item text-center p-relative">
@@ -765,7 +765,7 @@
                 </div>
                 <div class="row">
                     <div class="case-button mt-30 text-center">
-                        <a class="tp-btn" href="realisation.html">Toutes Nos Conceptions</a>
+                        <a class="tp-btn" href="{% url  'realisation' %}">Toutes Nos Conceptions</a>
                     </div>
                 </div>
             </div>
@@ -855,6 +855,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="row brand-center align-items-center">
                     <div class="col-lg-3 col-md-3 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
                         <div class="brand-logo">
@@ -877,6 +878,35 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="row align-items-center">
+                    <div class="col-lg col-md wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">
+                        <div class="brand-logo" style="background-color: white; borde">
+                            <img  src="/static/assets/img/cta/ceprcom-removebg-preview.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg col-md wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".6s">
+                        <div class="brand-logo">
+                            <img src="/static/assets/img/brand/brand-8.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg col-md wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
+                        <div class="brand-logo">
+                            <img src="/static/assets/img/brand/brand-9.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg col-md wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".8s">
+                        <div class="brand-logo">
+                            <img src="/static/assets/img/brand/brand-10.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg col-md wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
+                        <div class="brand-logo">
+                            <img src="/static/assets/img/brand/brand-11.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
         <br><br>
@@ -1092,20 +1122,20 @@
                     <div class="col-xl-4 col-lg-4  wow tpfadeRight" data-wow-duration=".7s" data-wow-delay=".7s" style="visibility: visible; animation-duration: 0.7s; animation-delay: 0.7s; animation-name: tpfadeRight;">
                         <div class="tp-case-item text-center p-relative" style="width: 100%; display: inline-block;">
                             <div class="tp-case-item__thumb fix">
-                                <a href="https://www.laxmedical.pro/" tabindex="0"><img src="/static/assets/img/case/case-3-3.jpg" alt=""></a>
+                                <a href="https://www.medical.laxtech.pro/" tabindex="0"><img src="/static/assets/img/case/case-3-3.jpg" alt=""></a>
                             </div>
                             <div class="tp-circle-text">
-                                <a href="https://www.laxmedical.pro/" tabindex="0">Lax Medical</a>
+                                <a href="https://www.medical.laxtech.pro/" tabindex="0">Lax Medical</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4  wow tpfadeLeft" data-wow-duration=".7s" data-wow-delay=".9s" style="visibility: hidden; animation-duration: 0.7s; animation-delay: 0.9s; animation-name: none;">
                         <div class="tp-case-item text-center p-relative" style="width: 100%; display: inline-block;">
                             <div class="tp-case-item__thumb fix">
-                                <a href="https://www.laxmarket.store/" tabindex="0"><img src="/static/assets/img/case/case-3-4.jpg" alt=""></a>
+                                <a href="https://www.market.laxtech.pro/" tabindex="0"><img src="/static/assets/img/case/case-3-4.jpg" alt=""></a>
                             </div>
                             <div class="tp-circle-text">
-                                <a href="https://www.laxmarket.store/" tabindex="0">Lax Market</a>
+                                <a href="https://www.market.laxtech.pro/" tabindex="0">Lax Market</a>
                             </div>
                         </div>
                     </div>
@@ -1123,7 +1153,7 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="tp-case-button text-center mt-40">
-                            <a class="tp-btn" href="produits.html">Toutes Nos Solutions</a>
+                            <a class="tp-btn" href="{% url  'produits' %}">Toutes Nos Solutions</a>
                         </div>
                     </div>
                 </div>
@@ -1206,7 +1236,7 @@
                                     </div>
                                     <div class="tp-slider-exp-item__service-link">
                                         <div class="tp-link">
-                                            <a href="a-propos.html">
+                                            <a href="{% url  'about' %}">
                                                 <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z"
@@ -1300,8 +1330,8 @@
                                 </div>
                                 <div class="tp-footer-widget__list">
                                     <ul>
-                                        <li><a href="https://www.laxmedical.pro/">Lax Medical</a></li>
-                                        <li><a href="https://www.laxmarket.store/">Lax Market</a></li>
+                                        <li><a href="https://www.medical.laxtech.pro/">Lax Medical</a></li>
+                                        <li><a href="https://www.market.laxtech.pro/">Lax Market</a></li>
                                         <li><a href="#">I.M.A AI</a></li>
                                         <li><a href="http://mr.julishaafrica.com/">Mr.Julisha</a></li>
                                         <li><a href="https://www.esrudagritech.com/">Esrud Agri Tech</a></li>
@@ -1316,11 +1346,11 @@
                                 </div>
                                 <div class="tp-footer-widget__list">
                                     <ul>
-                                        <li><a href="services.html">Développement Web/Mobile</a></li>
-                                        <li><a href="services.html">Développement Desktop</a></li>
-                                        <li><a href="services.html">Mise à Jour et Maintenance</a></li>
-                                        <li><a href="services.html">Consultance IA</a></li>
-                                        <li><a href="services.html">Consultance IOT</a></li>
+                                        <li><a href="{% url 'services' %}">Développement Web/Mobile</a></li>
+                                        <li><a href="{% url 'services' %}">Développement Desktop</a></li>
+                                        <li><a href="{% url 'services' %}">Mise à Jour et Maintenance</a></li>
+                                        <li><a href="{% url 'services' %}">Consultance IA</a></li>
+                                        <li><a href="{% url 'services' %}">Consultance IOT</a></li>
                                     </ul>
                                 </div>
                             </div>
