@@ -11,10 +11,14 @@ class Projects(models.Model):
     description = models.TextField(null = True, blank = True)
     link = models.URLField(null = True, blank = True)
     image = models.ImageField(upload_to='projects/', null = True, blank = True)
+    cover = models.ImageField(upload_to='projects/covers/', null = True, blank = True)
     
     @property
     def image_url(self):
         return (self.image and hasattr(self.image, 'url') and self.image.url) or '/static/assets/img/logo/logo.png'
+    @property
+    def cover_url(self):
+        return (self.cover and hasattr(self.cover, 'url') and self.cover.url) or '/static/assets/img/logo/logo.png'
 
 
 class Achievements(models.Model):
