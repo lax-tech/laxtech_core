@@ -169,18 +169,20 @@
       <div class="tp-service-area pt-120 pb-100">
          <div class="container">
             <div class="row">
+            {% for project in projects %}
                <div class="col-xl-4 col-lg-4 mb-30  wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".6s">
                   <div class="service-item-three text-center item2">
                      <div class="service-item-three__img">
-                        <img src="/static/assets/img/products/sv-6.png" alt="">
+                        <img src="{{project.image_url}}" alt="">
                      </div>
                      <div class="service-item-three__content">
-                        <h4 class="tp-service-sm-title"><a href="https://www.medical.laxtech.pro/" target="_blank">Lax Medical</a>
+                        <h4 class="tp-service-sm-title"><a href="{{project.link}}" target="_blank">{{project.name}}</a>
                         </h4>
-                        <p>Plateforme E-Santé pour la numérisation des établissement de santé</p>
+                        <p>{{project.description}}</p>
+                        {% comment %} <p>Plateforme E-Santé pour la numérisation des établissement de santé</p> {% endcomment %}
                      </div>
                      <div class="service-item-three__button">
-                        <a href="https://www.medical.laxtech.pro/" target="_blank">
+                        <a href="{{project.link}}" target="_blank">
                            <span>
                               <svg width="34" height="16" viewBox="0 0 34 16" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -193,7 +195,8 @@
                      </div>
                   </div>
                </div>
-               <div class="col-xl-4 col-lg-4 mb-30  wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".5s">
+               {% endfor %}
+               {% comment %} <div class="col-xl-4 col-lg-4 mb-30  wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".5s">
                   <div class="service-item-three active text-center item1">
                      <div class="service-item-three__img">
                         <img src="/static/assets/img/products/sv-5.png" alt="">
@@ -284,7 +287,7 @@
                         </a>
                      </div>
                   </div>
-               </div>
+               </div> {% endcomment %}
             </div>
          </div>
       </div>

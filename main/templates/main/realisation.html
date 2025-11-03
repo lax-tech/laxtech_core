@@ -169,19 +169,20 @@
       <div class="tp-case-area pt-120 pb-120">
          <div class="container">
             <div class="row gx-20">
-
+              {% for ach in achievements %}
                <div class="col-xl-6 col-lg-6">
                   <div class="tp-case-item text-center p-relative" style="width: 100%; display: inline-block;">
                      <div class="tp-case-item__thumb fix">
-                       <a href="https://www.ship.laxtech.pro/" target="_blank" tabindex="0"><img src="/static/assets/img/case/laxship.svg" alt=""></a>
+                       <a href="{{ach.link}}" target="_blank" tabindex="0"><img src="{{ach.image_url}}" alt=""></a>
                      </div>
                      <div class="tp-circle-text">
-                       <a href="https://www.ship.laxtech.pro/" target="_blank" tabindex="0">Lax Ship</a>
+                       <a href="{{ach.link}}" target="_blank" tabindex="0">{{ach.title}}</a>
                      </div>
                    </div>
                </div>
+                {% endfor %}
 
-                <div class="col-xl-6 col-lg-6">
+                {% comment %} <div class="col-xl-6 col-lg-6">
                   <div class="tp-case-item text-center p-relative" style="width: 100%; display: inline-block;">
                      <div class="tp-case-item__thumb fix">
                        <a href="https://www.food.laxtech.pro/" target="_blank" tabindex="0"><img src="/static/assets/img/case/laxfood.svg" alt=""></a>
@@ -234,7 +235,7 @@
                    <a href="https://www.uloyola.cd/" target="_blank" tabindex="0">Ulc Loyola </a>
                  </div>
                </div>
-           </div>
+             </div>
             
                <div class="col-xl-6 col-lg-6">
                   <div class="tp-case-item text-center p-relative" style="width: 100%; display: inline-block;">
@@ -315,7 +316,9 @@
                      <a href="https://www.cev.laxtech.pro/" target="_blank" tabindex="0">C.E.V</a>
                    </div>
                  </div>
-             </div>
+             </div> {% endcomment %}
+
+
             </div>
             <div class="row">
                <div class="col-xl-12">
