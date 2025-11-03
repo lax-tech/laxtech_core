@@ -170,10 +170,10 @@
          <div class="container">
             <div class="row">
             {% for project in projects %}
-               <div class="col-xl-4 col-lg-4 mb-30  wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".6s">
+               <div style=" max-height:500px; " class="col-xl-4 col-lg-4 mb-30  wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".6s">
                   <div class="service-item-three text-center item2">
                      <div class="service-item-three__img">
-                        <img src="{{project.image_url}}" alt="">
+                        <img src="{{project.image_url}}" alt="" style=" border-radius: 20px; width: 250px;">
                      </div>
                      <div class="service-item-three__content">
                         <h4 class="tp-service-sm-title"><a href="{{project.link}}" target="_blank">{{project.name}}</a>
