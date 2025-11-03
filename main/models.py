@@ -55,6 +55,8 @@ class Partners(models.Model):
     website = models.URLField(null = True, blank = True)
     ligne = models.CharField(max_length = 200, null = True, blank = True)
     
+    def __str__(self):
+        return f"{self.name}"
     @property
     def logo_url(self):
         return (self.logo and hasattr(self.logo, 'url') and self.logo.url) or '/static/assets/img/logo/logo.png'
