@@ -1,13 +1,10 @@
 @charset "UTF-8";
 
-@font-face {
-  font-family: NexaRegular;
-  src: url("Fonts/NexaRegular.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 :root {
-  --tp-ff-body: "NexaRegular";
-  --tp-ff-heading: "NexaRegular", sans-serif;
+  --tp-ff-body: "Manrope", sans-serif;
+  --tp-ff-heading: "Manrope", sans-serif;
   --tp-ff-fontawesome: Font Awesome 5 Pro;
 
   --tp-common-white: #ffffff;
@@ -2014,7 +2011,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .tp-section-subtitle {
-  font-family: "NexaRegular";
+  font-family: "Manrope", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
@@ -3079,7 +3076,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .minicart .cart-content a {
   color: var(--tp-common-black);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 15px;
   font-weight: 700;
 }
@@ -4138,7 +4135,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .tp-inner-list ul li {
-  font-family: "NexaRegular";
+  font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -5204,7 +5201,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .sv-details-title-sm {
-  font-family: "Poppins";
+  font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 26px;
@@ -5219,7 +5216,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .sv-details-content p {
-  font-family: "NexaRegular";
+  font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
@@ -5350,6 +5347,63 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .tp-case-active .slick-slide {
   padding: 0px 15px;
+}
+
+.tp-case-wrapper {
+  position: relative;
+}
+
+.tp-case-wrapper .tp-case-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  background: var(--tp-common-white);
+  color: var(--tp-common-black);
+  box-shadow: 0 8px 24px rgba(21, 23, 24, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tp-case-wrapper .tp-case-arrow:hover {
+  background: var(--tp-common-green);
+  color: var(--tp-common-white);
+  box-shadow: 0 10px 28px rgba(21, 23, 24, 0.18);
+}
+
+.tp-case-wrapper .tp-case-arrow i {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.tp-case-wrapper > .slick-prev {
+  left: calc(300px + 16px);
+}
+
+.tp-case-wrapper > .slick-next {
+  right: calc(300px + 16px);
+}
+
+@media (max-width: 767px) {
+  .tp-case-wrapper > .slick-prev {
+    left: 8px;
+  }
+
+  .tp-case-wrapper > .slick-next {
+    right: 8px;
+  }
+
+  .tp-case-wrapper .tp-case-arrow {
+    width: 42px;
+    height: 42px;
+  }
 }
 
 .case-grident-bg {
@@ -5751,7 +5805,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   font-size: 40px;
   color: #dddddd;
   line-height: 1.3;
-  font-family: "NexaRegular";
+  font-family: "Manrope", sans-serif;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -9027,7 +9081,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .product-model-title {
-  font-family: "Archivo";
+  font-family: "Manrope", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 15px;
