@@ -491,50 +491,72 @@
 		],
 	});
 
-	$(".tp-case-active").slick({
-		fade: false,
-		autoplay: true,
-		autoplaySpeed: 3000,
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		arrows: true,
-		dots: false,
-		infinite: true,
-		draggable: true,
-		swipe: true,
-		touchMove: true,
-		pauseOnHover: true,
-		appendArrows: $(".tp-case-wrapper"),
-		prevArrow:
-			'<button type="button" class="slick-prev tp-case-arrow" aria-label="Précédent"><i class="fal fa-arrow-left"></i></button>',
-		nextArrow:
-			'<button type="button" class="slick-next tp-case-arrow" aria-label="Suivant"><i class="fal fa-arrow-right"></i></button>',
-		responsive: [
-			{
-				breakpoint: 1200,
-				settings: {
-					slidesToShow: 3,
+	$(".tp-case-active").each(function () {
+		var $slider = $(this);
+		var $wrap = $slider.closest(".tp-case-wrapper");
+
+		// Skip carousels inside [hidden] blocks (broken / duplicate markup)
+		if ($slider.closest("[hidden]").length) {
+			return;
+		}
+
+		$slider.slick({
+			fade: false,
+			autoplay: true,
+			autoplaySpeed: 3000,
+			speed: 500,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			arrows: true,
+			dots: false,
+			infinite: true,
+			draggable: true,
+			swipe: true,
+			touchMove: true,
+			pauseOnHover: true,
+			pauseOnFocus: true,
+			appendArrows: $wrap,
+			prevArrow:
+				'<button type="button" class="slick-prev tp-case-arrow" aria-label="Précédent"><i class="fal fa-arrow-left"></i></button>',
+			nextArrow:
+				'<button type="button" class="slick-next tp-case-arrow" aria-label="Suivant"><i class="fal fa-arrow-right"></i></button>',
+			responsive: [
+				{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 3,
+					},
 				},
-			},
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 2,
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 2,
+					},
 				},
-			},
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 1,
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1,
+					},
 				},
-			},
-			{
-				breakpoint: 480,
-				settings: {
-					slidesToShow: 1,
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 1,
+					},
 				},
-			},
-		],
+			],
+		});
+	});
+
+	$(document).on("click", ".tp-case-nav-prev", function (e) {
+		e.preventDefault();
+		$(this).closest(".tp-case-area").find(".tp-case-active").slick("slickPrev");
+	});
+
+	$(document).on("click", ".tp-case-nav-next", function (e) {
+		e.preventDefault();
+		$(this).closest(".tp-case-area").find(".tp-case-active").slick("slickNext");
 	});
 
 	$(".testimonial-active-three").slick({
