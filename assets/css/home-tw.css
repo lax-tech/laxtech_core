@@ -189,32 +189,79 @@ img {
   pointer-events: none;
 }
 
-.lt-preloader-mark {
-  display: block;
-  width: 56px;
-  height: 56px;
-  transform-origin: 50% 50%;
-  animation: lt-spin 1.12s linear infinite;
-}
-
-.lt-preloader-mark img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  /* favicon.png is blue on black — keep the mark, drop the plate */
-  filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='k' color-interpolation-filters='sRGB'%3E%3CfeColorMatrix type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 6 6 6 0 -1'/%3E%3C/filter%3E%3C/svg%3E#k");
-}
-
-#preloader.is-done .lt-preloader-mark {
-  animation: none;
-  transform: scale(0.86);
-  opacity: 0;
+.lt-atom {
+  --lt-atom-size: 72px;
+  --lt-atom-dot: 6px;
+  position: relative;
+  width: var(--lt-atom-size);
+  height: var(--lt-atom-size);
+  color: var(--lt-brand);
   transition: transform 0.55s var(--lt-ease), opacity 0.55s var(--lt-ease);
 }
 
-@keyframes lt-spin {
+.lt-atom__nucleus,
+.lt-atom__orbit,
+.lt-atom__path,
+.lt-atom__electron {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.lt-atom__nucleus {
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  width: 11px;
+  height: 11px;
+  margin: -5.5px 0 0 -5.5px;
+  background: currentColor;
+}
+
+.lt-atom__orbit {
+  inset: 0;
+  border: 1px solid currentColor;
+  opacity: 0.38;
+}
+
+.lt-atom__path {
+  inset: 0;
+  animation: lt-atom-orbit linear infinite;
+}
+
+.lt-atom__path--a {
+  animation-duration: 2.1s;
+}
+
+.lt-atom__path--b {
+  animation-duration: 3.5s;
+  animation-name: lt-atom-orbit-b;
+}
+
+.lt-atom__electron {
+  top: calc(var(--lt-atom-dot) / -2);
+  left: 50%;
+  width: var(--lt-atom-dot);
+  height: var(--lt-atom-dot);
+  margin-left: calc(var(--lt-atom-dot) / -2);
+  background: currentColor;
+}
+
+#preloader.is-done .lt-atom {
+  transform: scale(0.86);
+  opacity: 0;
+}
+
+#preloader.is-done .lt-atom__path {
+  animation: none;
+}
+
+@keyframes lt-atom-orbit {
   to { transform: rotate(360deg); }
+}
+
+@keyframes lt-atom-orbit-b {
+  from { transform: rotate(180deg); }
+  to { transform: rotate(540deg); }
 }
 
 /* —— Drawer / overlay —— */
@@ -399,6 +446,46 @@ img {
     padding-right: 0.62rem;
     font-size: 12.5px;
   }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .lt-nav-link,
+  .lt-nav-cta {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 12px;
+  }
+}
+
+.lt-legal h2 {
+  margin-top: 0.35em;
+  color: var(--lt-fg);
+  font-size: 1.25rem;
+  font-weight: 650;
+  letter-spacing: -0.03em;
+}
+
+.lt-legal h2:first-child {
+  margin-top: 0;
+}
+
+.lt-legal a {
+  color: var(--lt-fg);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.lt-legal a:hover {
+  color: var(--lt-brand);
+}
+
+.lt-legal-link {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.lt-form-status a {
+  color: inherit;
 }
 
 /* —— Buttons —— */
@@ -1023,7 +1110,8 @@ body.is-ready .tp-hero__thumb3 {
   .size-text,
   .tp-hero__wrapper,
   .tp-hero__thumb3,
-  .lt-preloader-mark,
+  .lt-atom,
+  .lt-atom__path,
   .lt-ai-copy .lt-ai-kicker,
   .lt-ai-copy h2,
   .lt-ai-copy > p,
@@ -1332,8 +1420,12 @@ html[data-theme="dark"] main.bg-white {
   background-color: var(--lt-canvas) !important;
 }
 
-html[data-theme="dark"] .lt-preloader-mark img {
-  filter: none;
+html[data-theme="dark"] .lt-atom {
+  color: #5aa8ea;
+}
+
+html[data-theme="dark"] .lt-atom__orbit {
+  opacity: 0.5;
 }
 
 html[data-theme="dark"] .rounded-\[28px\].bg-white,

@@ -51,14 +51,42 @@
     <meta property="og:title" content="Au cœur de l'innovation technologique en Afrique" />
     <meta property="og:description" content="Des solutions numériques adaptées à vos besoins" />
     <meta property="og:image" content="assets/img/about/Presentation 2.jpg" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Lax Technologies",
+      "legalName": "Lax Technologies SAS",
+      "url": "https://laxtech.pro/",
+      "logo": "https://laxtech.pro/assets/img/logo/logo.png",
+      "email": "contact@laxtech.pro",
+      "telephone": "+243810843164",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Concession Procoki N°1 OUA",
+        "addressLocality": "Kinshasa",
+        "addressCountry": "CD"
+      },
+      "sameAs": [
+        "https://web.facebook.com/laxtechnologie",
+        "https://www.linkedin.com/company/87976550",
+        "https://www.instagram.com/laxtechnologies/"
+      ]
+    }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HYSSPHWGNH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-HYSSPHWGNH");
+    </script>
 </head>
 
 <body class="bg-white font-sans text-ink antialiased">
     <a class="lt-skip" href="#main">Aller au contenu</a>
     <div id="preloader" class="fixed inset-0 z-[80] flex items-center justify-center bg-white" role="status" aria-label="Chargement">
-        <div class="preloader lt-preloader">
-            <span class="lt-preloader-mark" aria-hidden="true"><img src="assets/img/favicon.png" alt="" /></span>
-        </div>
+        <div class="preloader lt-preloader" aria-hidden="true"><div class="lt-atom"><span class="lt-atom__nucleus"></span><span class="lt-atom__orbit"></span><span class="lt-atom__path lt-atom__path--a"><span class="lt-atom__electron"></span></span><span class="lt-atom__path lt-atom__path--b"><span class="lt-atom__electron"></span></span></div></div>
     </div>
     <button class="scroll-top scroll-to-target pointer-events-none fixed bottom-6 right-6 z-40 flex h-11 w-11 items-center justify-center rounded-full border border-black/10 bg-white text-ink opacity-0 transition hover:border-brand hover:text-brand" data-target="html">
     <i class="far fa-angle-double-up"></i>
@@ -81,6 +109,9 @@
                             <a class="lt-nav-link" href="https://platform.laxtech.pro/" target="_blank" rel="noopener">Lax Platform</a>
                         </li>
                         <li>
+                            <a class="lt-nav-link" href="https://ai.laxtech.pro" target="_blank" rel="noopener">Lax AI Lab</a>
+                        </li>
+                        <li>
                             <a class="lt-nav-link" href="services.html">Services</a>
                         </li>
                         <li>
@@ -95,7 +126,7 @@
                     </ul>
                 </nav>
                 <div class="lt-header-end ml-auto flex shrink-0 items-center gap-1.5 lg:ml-0">
-                    <div class="tp-social-menu hidden md:block">
+                    <div class="tp-social-menu hidden xl:block">
                         <nav>
                             <ul class="flex items-center gap-1">
                                 <li>
@@ -117,8 +148,7 @@
                         <nav id="mobile-menu-2">
                             <ul>
                                 <li><a href="index.html">Accueil</a></li>
-                                <li><a href="https://platform.laxtech.pro/" target="_blank" rel="noopener">Lax Platform</a></li>
-                                <li><a href="services.html">Services</a></li>
+                                <li><a href="https://platform.laxtech.pro/" target="_blank" rel="noopener">Lax Platform</a></li><li><a href="https://ai.laxtech.pro" target="_blank" rel="noopener">Lax AI Lab</a></li><li><a href="services.html">Services</a></li>
                                 <li><a href="realisation.html">Réalisations</a></li>
                                 <li><a href="about.html">A Propos</a></li>
                                 <li><a href="contact.html">Contact</a></li>
@@ -151,8 +181,7 @@
             </div>
             <div class="mobile-menu mb-8 space-y-1 text-sm font-semibold">
                 <a class="block rounded-lg px-2 py-2 hover:bg-white/10" href="index.html">Accueil</a>
-                <a class="block rounded-lg px-2 py-2 hover:bg-white/10" href="https://platform.laxtech.pro/" target="_blank" rel="noopener">Lax Platform</a>
-                <a class="block rounded-lg px-2 py-2 hover:bg-white/10" href="services.html">Services</a>
+                <a class="block rounded-lg px-2 py-2 hover:bg-white/10" href="https://platform.laxtech.pro/" target="_blank" rel="noopener">Lax Platform</a><a class="block rounded-lg px-2 py-2 hover:bg-white/10" href="https://ai.laxtech.pro" target="_blank" rel="noopener">Lax AI Lab</a><a class="block rounded-lg px-2 py-2 hover:bg-white/10" href="services.html">Services</a>
                 <a class="block rounded-lg px-2 py-2 hover:bg-white/10" href="realisation.html">Réalisations</a>
                 <a class="block rounded-lg px-2 py-2 hover:bg-white/10" href="about.html">A Propos</a>
                 <a class="block rounded-lg px-2 py-2 hover:bg-white/10" href="contact.html">Contact</a>
@@ -227,7 +256,7 @@
                                 <a class="tp-btn inline-flex h-11 items-center rounded-full bg-brand px-6 text-[13px] font-semibold tracking-wide text-white hover:bg-brand-hover" href="https://wa.me/+243810843164">Consulter un expert</a>
                             </div>
                             <div class="tp-hero__button">
-                                <a class="tp-btn-secondaire tp-btn inline-flex h-11 items-center rounded-full border border-black/10 bg-transparent px-6 text-[13px] font-semibold tracking-wide text-ink transition hover:border-ink hover:bg-ink hover:text-white" href="https://wa.me/+243810843164">Contact</a>
+                                <a class="tp-btn-secondaire tp-btn inline-flex h-11 items-center rounded-full border border-black/10 bg-transparent px-6 text-[13px] font-semibold tracking-wide text-ink transition hover:border-ink hover:bg-ink hover:text-white" href="contact.html">Contact</a>
                             </div>
                         </div>
                     </div>
@@ -599,10 +628,10 @@
                             </div>
                             <div class="tp-case-item group relative w-[250px] shrink-0 snap-start text-center">
                                 <div class="tp-case-item__thumb overflow-hidden rounded-2xl bg-[#f7f7f8]">
-                                    <a href="#"><img src="assets/img/case/case-3-7.jpg" alt="" class="h-44 w-full object-cover" /></a>
+                                    <a href="details-zuzuna.html"><img src="assets/img/case/case-3-7.jpg" alt="" class="h-44 w-full object-cover" /></a>
                                 </div>
                                 <div class="tp-circle-text pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 transition group-hover:opacity-100">
-                                    <a class="pointer-events-auto flex h-[110px] w-[110px] items-center justify-center rounded-full bg-ink px-3 text-center text-sm font-bold text-white" href="#">zuzuna4africa</a>
+                                    <a class="pointer-events-auto flex h-[110px] w-[110px] items-center justify-center rounded-full bg-ink px-3 text-center text-sm font-bold text-white" href="details-zuzuna.html">zuzuna4africa</a>
                                 </div>
                             </div>
                         </div>
@@ -789,7 +818,7 @@
                         <div class="tp-case-item"><div class="tp-case-item__thumb"><a href="https://www.market.laxtech.pro/"><img src="assets/img/case/case-3-4.jpg" alt="" /></a></div><div class="tp-circle-text"><a href="https://www.market.laxtech.pro/">Lax Market</a></div></div>
                         <div class="tp-case-item"><div class="tp-case-item__thumb"><a href="https://ai.laxtech.pro" target="_blank" rel="noopener"><img src="assets/img/case/case-3-5.jpg" alt="" /></a></div><div class="tp-circle-text"><a href="https://ai.laxtech.pro" target="_blank" rel="noopener">Lax AI Lab</a></div></div>
                         <div class="tp-case-item"><div class="tp-case-item__thumb"><a href="https://www.esrudagritech.com/"><img src="assets/img/case/case-3-6.jpg" alt="" /></a></div><div class="tp-circle-text"><a href="https://www.esrudagritech.com/">Esrud Agri Tech</a></div></div>
-                        <div class="tp-case-item"><div class="tp-case-item__thumb"><a href="#"><img src="assets/img/case/case-3-7.jpg" alt="" /></a></div><div class="tp-circle-text"><a href="#">zuzuna4africa</a></div></div>
+                        <div class="tp-case-item"><div class="tp-case-item__thumb"><a href="details-zuzuna.html"><img src="assets/img/case/case-3-7.jpg" alt="" /></a></div><div class="tp-circle-text"><a href="details-zuzuna.html">zuzuna4africa</a></div></div>
                     </div>
                 </div>
                 <div class="case-button mt-30 text-center">
@@ -1096,6 +1125,7 @@
                                         <li><a class="hover:text-white" href="realisation.html">Réalisations</a></li>
                                         <li><a class="hover:text-white" href="about.html">A Propos</a></li>
                                         <li><a class="hover:text-white" href="contact.html">Contact</a></li>
+                                        <li><a class="hover:text-white" href="prix.html">Tarifs</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1128,7 +1158,7 @@
                 <br class="hidden"><br class="hidden"><br class="hidden">
                 <div class="copy-right-wrapper footer-border-top mt-12 border-t border-white/10 pt-6">
                     <div class="copyright-left text-center text-sm text-white/50 lg:text-left">
-                        <p>Copyright © 2026, Lax Technologies. Tous droits réservés</p>
+                        <p>Copyright © 2026, Lax Technologies. Tous droits réservés · <a class="lt-legal-link hover:text-white" href="mentions-legales.html">Mentions légales</a> · <a class="lt-legal-link hover:text-white" href="politique-confidentialite.html">Confidentialité</a></p>
                     </div>
                 </div>
             </div>

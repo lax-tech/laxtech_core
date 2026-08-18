@@ -229,6 +229,41 @@
     }, { passive: true });
   }
 
+  document.querySelectorAll("[data-lt-form]").forEach(function (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var nameEl = form.querySelector('[name="name"], [name="last_name"]');
+      var emailEl = form.querySelector('[name="email"]');
+      var msgEl = form.querySelector('[name="message"]');
+      var name = nameEl ? nameEl.value.trim() : "";
+      var email = emailEl ? emailEl.value.trim() : "";
+      var message = msgEl ? msgEl.value.trim() : "";
+      var status = form.querySelector(".lt-form-status");
+      if (!status) {
+        status = document.createElement("p");
+        status.className = "lt-form-status mt-3 text-sm";
+        status.setAttribute("role", "status");
+        form.appendChild(status);
+      }
+      if (!name || !email || !message) {
+        status.textContent = "Merci de renseigner votre nom, votre e-mail et un message.";
+        status.classList.add("text-brand");
+        return;
+      }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        status.textContent = "Merci d’indiquer une adresse e-mail valide.";
+        status.classList.add("text-brand");
+        return;
+      }
+      var body = "Nom : " + name + "\nE-mail : " + email + "\n\n" + message;
+      var mailto = "mailto:contact@laxtech.pro?subject=" + encodeURIComponent("Message depuis laxtech.pro — " + name) + "&body=" + encodeURIComponent(body);
+      var wa = "https://wa.me/243810843164?text=" + encodeURIComponent("Bonjour Lax Technologies,\n\nJe suis " + name + " (" + email + ").\n\n" + message);
+      status.classList.remove("text-brand");
+      status.innerHTML = 'Votre messagerie va s’ouvrir. Si ce n’est pas le cas, <a class="font-semibold text-ink underline underline-offset-2 hover:text-brand" href="' + wa + '" target="_blank" rel="noopener">envoyez le même message sur WhatsApp</a>.';
+      window.location.href = mailto;
+    });
+  });
+
   document.querySelectorAll("[data-count]").forEach(function (el) {
     var target = parseInt(el.getAttribute("data-count"), 10);
     if (!target) return;
