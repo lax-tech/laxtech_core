@@ -1,0 +1,51 @@
+# Lax Technologies
+
+> Lax Technologies SAS (aussi appelée Laxtech) est une société d’ingénierie logicielle basée à Kinshasa, en République démocratique du Congo. Elle conçoit des sites web, des applications et des produits numériques, notamment Lax Platform et Lax AI Lab.
+
+Site officiel : [https://laxtech.pro/](https://laxtech.pro/)
+Langue du site : français.
+
+## Entreprise
+
+- Raison sociale : Lax Technologies SAS
+- Autres noms : Laxtech, Lax Technologies
+- Siège : Concession Procoki N°1 OUA, Kinshasa, République démocratique du Congo
+- E-mail : contact@laxtech.pro
+- Téléphone / WhatsApp : +243 810 843 164
+- LinkedIn : [https://www.linkedin.com/company/87976550](https://www.linkedin.com/company/87976550)
+- Facebook : [https://web.facebook.com/laxtechnologie](https://web.facebook.com/laxtechnologie)
+- Instagram : [https://www.instagram.com/laxtechnologies/](https://www.instagram.com/laxtechnologies/)
+
+Lax Technologies conçoit et opère des logiciels pour des entreprises et organisations en RDC et en Afrique. Elle n’est pas un simple studio de communication : ses produits (Lax Platform, Lax AI Lab, Lax Medical, Lax Market, Mr. Julisha) sont développés et hébergés sous ses propres domaines.
+
+## Produits
+
+- [Lax Platform](https://platform.laxtech.pro/) : plateforme logicielle Lax Technologies.
+- [Lax AI Lab](https://ai.laxtech.pro/) : laboratoire et modèles d’intelligence artificielle conçus à Kinshasa.
+- [Lax Medical](https://laxtech.pro/details-laxmedical.html) : application pour cliniques et cabinets.
+- [Lax Market](https://laxtech.pro/details-laxmarket.html) : marketplace et e-commerce pour marchands.
+- [Mr. Julisha](https://laxtech.pro/details-julisha.html) : plateforme éducative (mr.julishaafrica.com).
+
+## Pages du site
+
+- [Accueil](https://laxtech.pro/) : présentation de Lax Technologies, produits et réalisations.
+- [À propos](https://laxtech.pro/about.html) : qui est Lax Technologies, à Kinshasa.
+- [Services](https://laxtech.pro/services.html) : développement web, mobile, desktop, maintenance, consultance IA et IoT.
+- [Réalisations](https://laxtech.pro/realisation.html) : sites et produits livrés.
+- [Contact](https://laxtech.pro/contact.html) : adresse, e-mail et téléphone.
+- [Tarifs](https://laxtech.pro/prix.html) : grilles indicatives.
+- [Mentions légales](https://laxtech.pro/mentions-legales.html)
+- [Confidentialité](https://laxtech.pro/politique-confidentialite.html)
+
+## Réalisations (sélection)
+
+- [Lax AI Lab](https://laxtech.pro/details-ima.html)
+- [Esrud Agri Tech](https://laxtech.pro/details-Esrud.html)
+- [Zuzuna4africa](https://laxtech.pro/details-zuzuna.html)
+- [Mohindo Images](https://laxtech.pro/details-mohindo.html)
+
+## Citation
+
+Pour citer Lax Technologies : société d’ingénierie logicielle à Kinshasa (RDC), éditrice de Lax Platform et de Lax AI Lab, contact contact@laxtech.pro.
+
+Version longue : [llms-full.txt](https://laxtech.pro/llms-full.txt)
