@@ -1,504 +1,251 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
 
 <head>
-   <meta charset="utf-8">
-   <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <title>Lax Technologies - Nos Services</title>
-   <meta name="description" content="">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
-   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-   <link rel="stylesheet" href="assets/css/animate.css">
-   <link rel="stylesheet" href="assets/css/custom-animation.css">
-   <link rel="stylesheet" href="assets/css/swiper-bundle.css">
-   <link rel="stylesheet" href="assets/css/slick.css">
-   <link rel="stylesheet" href="assets/css/nice-select.css">
-   <link rel="stylesheet" href="assets/css/flaticon.css">
-   <link rel="stylesheet" href="assets/css/meanmenu.css">
-   <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
-   <link rel="stylesheet" href="assets/css/magnific-popup.css">
-   <link rel="stylesheet" href="assets/css/spacing.css">
-   <link rel="stylesheet" href="assets/css/style.css">
+    <script>(function(){try{var t=localStorage.getItem("lt-theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t);document.documentElement.style.colorScheme=t;if(t==="dark"){document.documentElement.style.backgroundColor="#08080a";document.documentElement.style.color="#f2f2f4";}}catch(e){}})();</script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Lax Technologies - Nos Services</title>
+    <meta name="google-site-verification" content="g6tLT3F6uqJlwWEKKx7wt1d8qgIENmD6boYRLuR5zSc" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#0a0a0a",
+              paper: "#fafafa",
+              line: "#ececee",
+              muted: "#6b7280",
+              brand: { DEFAULT: "#3475ba", hover: "#2b63a0", soft: "#f3f7fb" }
+            },
+            fontFamily: {
+              sans: ["Manrope", "ui-sans-serif", "system-ui", "sans-serif"]
+            },
+            boxShadow: {
+              lift: "0 1px 2px rgba(10,10,10,.03), 0 10px 28px rgba(10,10,10,.04)"
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="assets/css/home-tw.css" />
+    <meta name="keywords" content="Technologie Afrique, innovation, digitalisation, informatique, web, developpement web" />
+    <meta name="author" content="Lax technologies SAS" />
+    <meta name="description" content="Au cœur de l'innovation technologique en Afrique" />
+    <meta property="og:title" content="Au cœur de l'innovation technologique en Afrique" />
+    <meta property="og:description" content="Des solutions numériques adaptées à vos besoin" />
+    <meta property="og:image" content="assets/img/about/Presentation 2.jpg" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HYSSPHWGNH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-HYSSPHWGNH");
+    </script>
 </head>
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HYSSPHWGNH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-HYSSPHWGNH');
-</script>
+<body class="bg-white font-sans text-ink antialiased">
+    <a class="lt-skip" href="#main">Aller au contenu</a>
+    <div id="preloader" class="fixed inset-0 z-[80] flex items-center justify-center bg-white" role="status" aria-label="Chargement">
+        <div class="preloader lt-preloader">
+            <span class="lt-preloader-mark" aria-hidden="true"><img src="assets/img/favicon.png" alt="" /></span>
+        </div>
+    </div>
+    <button class="scroll-top scroll-to-target pointer-events-none fixed bottom-6 right-6 z-40 flex h-11 w-11 items-center justify-center rounded-full border border-black/10 bg-white text-ink opacity-0 transition hover:border-brand hover:text-brand" data-target="html">
+        <i class="far fa-angle-double-up"></i>
+    </button>
 
-<body>
+    <header>
+        <div id="header-sticky" class="tp-header-area tp-md-space header-three z-index-5 fixed inset-x-0 top-0 z-50 px-5 pt-4 sm:px-8 lg:px-12 xl:px-16">
+            <div class="lt-header-shell mx-auto flex max-w-7xl items-center gap-3 rounded-full border border-black/[0.06] bg-white/65 px-2 py-1.5 pl-3 backdrop-blur-2xl sm:px-3">
+                <div class="tp-logo shrink-0">
+                    <a href="index.html" class="lt-logo flex items-center"><img src="assets/img/logo/logo.png" alt="Lax Technologies" class="lt-logo--light h-8 w-auto sm:h-9" /><img src="assets/img/logo/logo-white.png" alt="Lax Technologies" class="lt-logo--dark h-8 w-auto sm:h-9" /></a>
+                </div>
+                <nav class="lt-desk-nav mx-auto hidden min-w-0 lg:block" aria-label="Navigation principale">
+                    <ul class="lt-nav-track flex items-center gap-0.5 rounded-full p-0.5">
+                        <li><a class="lt-nav-link" href="index.html">Accueil</a></li>
+                        <li><a class="lt-nav-link" href="https://platform.laxtech.pro/" target="_blank" rel="noopener">Lax Platform</a></li>
+                        <li><a class="lt-nav-link" href="services.html" aria-current="page">Services</a></li>
+                        <li><a class="lt-nav-link" href="realisation.html">Réalisations</a></li>
+                        <li><a class="lt-nav-link" href="about.html">A Propos</a></li>
+                        <li><a class="lt-nav-cta" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="lt-header-end ml-auto flex shrink-0 items-center gap-1.5 lg:ml-0">
+                    <div class="tp-social-menu hidden md:block">
+                        <nav>
+                            <ul class="flex items-center gap-1">
+                                <li><a class="lt-social" href="https://web.facebook.com/laxtechnologie"><img src="assets/img/header/fb.png" alt="Facebook" /> <span>Facebook</span></a></li>
+                                <li><a class="lt-social" href="https://www.linkedin.com/company/87976550"><img src="assets/img/header/in.png" alt="LinkedIn" /> <span>LinkedIn</span></a></li>
+                                <li><a class="lt-social" href="https://www.instagram.com/laxtechnologies/"><img src="assets/img/header/insta.png" alt="Instagram" /> <span>Instagram</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="tp-header-3-menu hidden">
+                        <nav id="mobile-menu-2">
+                            <ul>
+                                <li><a href="index.html">Accueil</a></li>
+                                <li><a href="https://platform.laxtech.pro/" target="_blank" rel="noopener">Lax Platform</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="realisation.html">Réalisations</a></li>
+                                <li><a href="about.html">A Propos</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <button class="lt-theme" type="button" data-lt-theme aria-pressed="false" aria-label="Activer le mode sombre"><i class="fal fa-sun lt-theme__sun" aria-hidden="true"></i><i class="fal fa-moon lt-theme__moon" aria-hidden="true"></i></button><div class="header-right-three">
+                        <button class="bars tp-menu-bar flex h-10 w-10 items-center justify-center rounded-full bg-ink text-white lg:hidden" type="button" aria-label="Ouvrir le menu"><i class="fal fa-bars"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-   <header>
+    <div class="tp-offcanvas-area">
+        <div id="lt-drawer" class="tpoffcanvas lt-drawer fixed inset-y-0 right-0 z-[70] flex w-full max-w-md flex-col overflow-y-auto bg-ink p-8 text-white">
+            <div class="tpoffcanvas__close-btn mb-8 flex justify-end"><button class="close-btn flex h-11 w-11 items-center justify-center rounded-xl bg-white/10" type="button" aria-label="Fermer"><i class="fal fa-times"></i></button></div>
+            <div class="tpoffcanvas__logo mb-8"><a href="index.html"><img src="assets/img/logo/logo-white.png" alt="Lax Technologies" class="h-10 w-auto" /></a></div>
+            <div class="mobile-menu mb-8 space-y-1 text-sm font-semibold">
+                <a class="block rounded-lg px-2 py-2 hover:bg-white/10" href="index.html">Accueil</a>
+                <a class="block rounded-lg px-2 py-2 hover:bg-white/10" href="https://platform.laxtech.pro/" target="_blank" rel="noopener">Lax Platform</a>
+                <a class="block rounded-lg px-2 py-2 hover:bg-white/10" href="services.html">Services</a>
+                <a class="block rounded-lg px-2 py-2 hover:bg-white/10" href="realisation.html">Réalisations</a>
+                <a class="block rounded-lg px-2 py-2 hover:bg-white/10" href="about.html">A Propos</a>
+                <a class="block rounded-lg px-2 py-2 hover:bg-white/10" href="contact.html">Contact</a>
+            </div>
+            <div class="tpoffcanvas__info space-y-5">
+                <h3 class="offcanva-title text-lg font-semibold tracking-tight">Entrer en contact</h3>
+                <div class="tp-info-wrapper mb-20 flex items-center gap-4"><div class="tpoffcanvas__info-icon"><a class="flex h-11 w-11 items-center justify-center rounded-xl bg-white/10" href="mailto:contact@laxtech.pro" aria-label="Écrire un e-mail"><i class="fal fa-envelope"></i></a></div><div class="tpoffcanvas__info-address"><span class="block text-xs uppercase tracking-wider text-white/50">Adresse Mail</span><a class="font-semibold hover:text-brand" href="mailto:contact@laxtech.pro">Contact@laxtech.pro</a></div></div>
+                <div class="tp-info-wrapper mb-20 flex items-center gap-4"><div class="tpoffcanvas__info-icon"><a class="flex h-11 w-11 items-center justify-center rounded-xl bg-white/10" href="tel:+243810843164" aria-label="Appeler"><i class="fal fa-phone-alt"></i></a></div><div class="tpoffcanvas__info-address"><span class="block text-xs uppercase tracking-wider text-white/50">Téléphone</span><a class="font-semibold hover:text-brand" href="tel:+243810843164">+243 810 843 164</a></div></div>
+                <div class="tp-info-wrapper mb-20 flex items-center gap-4"><div class="tpoffcanvas__info-icon"><a class="flex h-11 w-11 items-center justify-center rounded-xl bg-white/10" href="https://www.google.com/maps/place/Laxtech+(Lax+technologies)+est+une+Soci%C3%A9t%C3%A9+par+Action+Simplifi%C3%A9e+(S.A.S)/@-4.3075683,15.3214008,15z/data=!4m6!3m5!1s0x1a6a340e8c679b65:0x574ef77b1f6a19f4!8m2!3d-4.3075683!4d15.3214008!16s%2Fg%2F11sc7j0g5j?entry=ttu" target="_blank" rel="noopener" aria-label="Voir sur la carte"><i class="fas fa-map-marker-alt"></i></a></div><div class="tpoffcanvas__info-address"><span class="block text-xs uppercase tracking-wider text-white/50">Localisation</span><a class="font-semibold hover:text-brand" href="https://www.google.com/maps/place/Laxtech+(Lax+technologies)+est+une+Soci%C3%A9t%C3%A9+par+Action+Simplifi%C3%A9e+(S.A.S)/@-4.3075683,15.3214008,15z/data=!4m6!3m5!1s0x1a6a340e8c679b65:0x574ef77b1f6a19f4!8m2!3d-4.3075683!4d15.3214008!16s%2Fg%2F11sc7j0g5j?entry=ttu" target="_blank" rel="noopener">Concession Procoki N°1 OUA.</a></div></div>
+            </div>
+            <div class="tpoffcanvas__social mt-auto pt-10"><div class="social-icon flex gap-3 text-lg"><a class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-brand" href="https://www.linkedin.com/company/87976550" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-brand" href="https://www.instagram.com/laxtechnologies/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-brand" href="https://web.facebook.com/laxtechnologie" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a></div></div>
+        </div>
+    </div>
+    <div id="lt-overlay" class="body-overlay lt-overlay pointer-events-none fixed inset-0 z-[60] bg-ink/40 opacity-0"></div>
 
-      <div id="preloader"">
-         <div class=" preloader">
-         <span></span>
-         <span></span>
-      </div>
-      </div>
+    <main id="main" class="pt-24">
+        <section class="lt-page-hero relative overflow-hidden">
+            <div class="lt-grid pointer-events-none absolute inset-0"></div>
+            <div class="pointer-events-none absolute -right-20 top-0 h-72 w-72 rounded-full bg-[radial-gradient(circle,_rgba(52,117,186,0.14),_transparent_68%)] blur-3xl"></div>
+            <div class="container mx-auto max-w-7xl px-6 sm:px-10 lg:px-16 xl:px-20">
+                <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-muted">Accueil / Nos Services</p>
+                <h1 class="mt-5 text-5xl font-light tracking-tight text-ink md:text-6xl">Nos Services</h1>
+            </div>
+        </section>
 
-      <button class="scroll-top scroll-to-target" data-target="html">
-         <i class="far fa-angle-double-up"></i>
-      </button>
+        <section class="pb-16">
+            <div class="container mx-auto max-w-7xl px-6 sm:px-10 lg:px-16 xl:px-20">
+                <div class="space-y-2">
+                    <article class="tp-service-item grid gap-8 border-t border-black/[0.08] py-8 md:grid-cols-[220px,1fr,auto] md:items-center">
+                        <img src="assets/img/service/sv-4.png" alt="" class="h-44 w-full rounded-[28px] object-cover bg-paper p-6" />
+                        <div>
+                            <h2 class="text-2xl font-semibold tracking-[-0.03em]">Développement Informatique</h2>
+                            <p class="mt-4 max-w-[62ch] text-base leading-8 text-muted">Nous offrons des solutions personnalisées en développement informatique pour la création de sites, de plateformes e-commerce et d'applications mobiles performantes.</p>
+                        </div>
+                        <a class="inline-flex h-11 items-center justify-center rounded-full bg-brand px-6 text-[13px] font-semibold tracking-wide text-white hover:bg-brand-hover" href="prix.html">Commander</a>
+                    </article>
+                    <article class="tp-service-item grid gap-8 border-t border-black/[0.08] py-8 md:grid-cols-[220px,1fr,auto] md:items-center">
+                        <img src="assets/img/service/sv-5.png" alt="" class="h-44 w-full rounded-[28px] object-cover bg-paper p-6" />
+                        <div>
+                            <h2 class="text-2xl font-semibold tracking-[-0.03em]">Data Analyse, Data Science et IA</h2>
+                            <p class="mt-4 max-w-[62ch] text-base leading-8 text-muted">Nous créons des modèles d'IA avancés pour l'analyse de données, la prédiction et la résolution de problèmes complexes et personnalisées.</p>
+                        </div>
+                        <a class="inline-flex h-11 items-center justify-center rounded-full bg-brand px-6 text-[13px] font-semibold tracking-wide text-white hover:bg-brand-hover" href="contact.html">Commander</a>
+                    </article>
+                    <article class="tp-service-item grid gap-8 border-t border-black/[0.08] py-8 md:grid-cols-[220px,1fr,auto] md:items-center">
+                        <img src="assets/img/service/sv-2.png" alt="" class="h-44 w-full rounded-[28px] object-cover bg-paper p-6" />
+                        <div>
+                            <h2 class="text-2xl font-semibold tracking-[-0.03em]">Développement IOT</h2>
+                            <p class="mt-4 max-w-[62ch] text-base leading-8 text-muted">Nous proposons des solutions dans le domaine de l'Internet des objets (IoT), que ce soit pour la domotique, l'automatisation industrielle ou autres applications.</p>
+                        </div>
+                        <a class="inline-flex h-11 items-center justify-center rounded-full bg-brand px-6 text-[13px] font-semibold tracking-wide text-white hover:bg-brand-hover" href="services.html">Commander</a>
+                    </article>
+                    <article class="tp-service-item grid gap-8 border-y border-black/[0.08] py-8 md:grid-cols-[220px,1fr,auto] md:items-center">
+                        <img src="assets/img/service/sv-3.png" alt="" class="h-44 w-full rounded-[28px] object-cover bg-paper p-6" />
+                        <div>
+                            <h2 class="text-2xl font-semibold tracking-[-0.03em]">Numérisation des Entreprises</h2>
+                            <p class="mt-4 max-w-[62ch] text-base leading-8 text-muted">Nous offrons des solutions de numérisation d'entreprise intégrant l'Internet des objets (IoT) pour la domotique, l'automatisation industrielle et d'autres applications.</p>
+                        </div>
+                        <a class="inline-flex h-11 items-center justify-center rounded-full bg-brand px-6 text-[13px] font-semibold tracking-wide text-white hover:bg-brand-hover" href="contact.html">Commander</a>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-      <div id="header-sticky" class="tp-header-area header-pl-pr header-transparent">
-         <div class="container-fluid">
-            <div class="row g-0 align-items-center">
-               <div class="col-xl-2 col-lg-2 col-md-4 col-6">
-                  <div class="tp-logo tp-logo-border">
-                     <a href="index.html">
-                        <img src="assets/img/logo/logo.png" alt="">
-                     </a>
-                  </div>
-               </div>
-               <div class="col-xl-10 col-lg-10 col-md-8 col-6 d-flex justify-content-center">
-                  <div class="tp-main-menu d-none d-xl-block">
-                     <div class="mean-push"></div>
-                     <nav id="mobile-menu" style="display: none;">
-                        <ul>
-                           <li><a href="index.html">Accueil</a>
-                           </li>
-                           <li><a href="produits.html">Produits</a></li>
-                           <li><a href="https://platform.laxtech.pro/" target="_blank" rel="noopener">Lax Platform</a></li>
-                           <li><a href="services.html">Services</a></li>
-                           <li><a href="realisation.html">Réalisations</a></li>
-                           <li><a href="about.html">A Propos</a></li>
-                           <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                     </nav>
-                  </div>
-                  <div class="tp-header-right">
-                     <div class="header-right-three d-flex justify-content-end nav_reduce">
-                        <button class="bars tp-menu-bar text-black">
-                           <i class="fal fa-bars"></i>
-                        </button>
-                     </div>
-                     <ul>
-                        <li class=" d-none d-md-inline-block search-wrapper">
-                           <div class="tp-hero__button">
-                              <a class="tp-btn-secondaire tp-btn" href="contact.html">Obtenir Un Devis</a>
-                           </div>
-                        </li>
+        <section class="pb-20">
+            <div class="space-y-4 overflow-hidden">
+                <div class="lt-marquee marque-slider-active carousel-rtl border-y border-black/[0.06] py-4 text-lg font-semibold tracking-[-0.03em] text-ink/80" dir="rtl">
+                    <div class="inline-flex min-w-max items-center gap-8 pr-8">
+                        <span>Penser.</span><span>Développer.</span><span>Innover.</span><span>Servir.</span><span>Améliorer.</span><span>Simplifier.</span>
+                        <span>Penser.</span><span>Développer.</span><span>Innover.</span><span>Servir.</span><span>Améliorer.</span><span>Simplifier.</span>
+                    </div>
+                </div>
+                <div class="lt-marquee marque-slider-active-2 border-y border-black/[0.06] py-4 text-lg font-semibold tracking-[-0.03em] text-ink/80">
+                    <div class="inline-flex min-w-max items-center gap-8 pr-8">
+                        <span>Concevoir.</span><span>Maintenir.</span><span>Accompagner.</span><span>Satisfaire.</span><span>Compétitionner.</span><span>Challenger.</span>
+                        <span>Concevoir.</span><span>Maintenir.</span><span>Accompagner.</span><span>Satisfaire.</span><span>Compétitionner.</span><span>Challenger.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                     </ul>
-                  </div>
-               </div>
+        <section class="pb-24">
+            <div class="container mx-auto max-w-7xl px-6 sm:px-10 lg:px-16 xl:px-20">
+                <div class="grid gap-10 rounded-[32px] bg-paper px-6 py-8 sm:px-8 lg:grid-cols-12 lg:px-10 lg:py-10">
+                    <div class="lg:col-span-5">
+                        <p class="mb-4 text-[11px] font-semibold uppercase tracking-[0.22em] text-muted">Discutons</p>
+                        <h2 class="text-3xl font-semibold tracking-[-0.03em] sm:text-4xl">Besoin de Discuter?</h2>
+                        <div class="mt-8 space-y-4 text-base leading-8 text-muted">
+                            <p>277 Avenue Isangi, Quartier du 30 Juin Commune de Lingwala.</p>
+                            <p>Ref : Route 24 Novembre.</p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-7">
+                        <div class="lt-contact-form">
+                            <h3 class="text-xl font-semibold tracking-tight">Remplissez le formulaire</h3>
+                            <form action="mailto:contact@laxtech.pro" method="get" enctype="text/plain" class="mt-6 space-y-5">
+                                <input class="lt-input" type="text" name="last_name" placeholder="Votre Nom" required />
+                                <input class="lt-input" type="email" name="email" placeholder="Votre Adresse Mail" required />
+                                <textarea class="lt-textarea" name="message" placeholder="Votre Message" required></textarea>
+                                <button type="submit" class="inline-flex h-11 items-center rounded-full bg-brand px-6 text-[13px] font-semibold tracking-wide text-white hover:bg-brand-hover">Envoyer</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-   </header>
-   <div class="tp-offcanvas-area">
-      <div class="tpoffcanvas">
-         <div class="tpoffcanvas__close-btn">
-            <button class="close-btn"><i class="fal fa-times"></i></button>
-         </div>
-         <div class="tpoffcanvas__logo">
-            <a href="index.html">
-               <img src="assets/img/logo/logo-white.png" alt="" />
-            </a>
-         </div>
-         <div class="mobile-menu"></div>
-         <div class="tpoffcanvas__info">
-            <h3 class="offcanva-title">Entrer en contact</h3>
-            <div class="tp-info-wrapper mb-20 d-flex align-items-center">
-               <div class="tpoffcanvas__info-icon">
-                  <a href="#"><i class="fal fa-envelope"></i></a>
-               </div>
+        </section>
+    </main>
 
-               <div class="tpoffcanvas__info-address">
-                  <span>Adresse Mail</span>
-                  <a href="mailto:contact@laxtech.pro">contact@laxtech.pro</a>
-               </div>
+    <footer>
+        <div class="tp-footer-area black-bg relative bg-ink pb-10 text-white">
+            <div class="container mx-auto max-w-7xl px-6 sm:px-10 lg:px-16 xl:px-20">
+                <div class="footer-border-top border-t border-white/10 pt-16">
+                    <div class="footer-scroll scroll-to-target-2 mb-8" data-target="html"><button class="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-transparent" type="button"><i class="far fa-arrow-up"></i></button></div>
+                    <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+                        <div><div class="tp-footer-widget"><div class="tp-footer-widget__title"><h4 class="tp-footer-title mb-5 text-[13px] font-semibold uppercase tracking-[0.16em] text-white/45">Produits</h4></div><div class="tp-footer-widget__list"><ul class="space-y-2 text-sm text-white/65"><li><a class="hover:text-white" href="https://www.medical.laxtech.pro/">Lax Medical</a></li><li><a class="hover:text-white" href="https://www.market.laxtech.pro/">Lax Market</a></li><li><a class="hover:text-white" href="https://ai.laxtech.pro" target="_blank" rel="noopener">Lax AI Lab</a></li><li><a class="hover:text-white" href="http://mr.julishaafrica.com/">Mr.Julisha</a></li><li><a class="hover:text-white" href="https://www.esrudagritech.com/">Esrud Agri Tech</a></li></ul></div></div></div>
+                        <div><div class="tp-footer-widget footer-space-one"><div class="tp-footer-widget__title"><h4 class="tp-footer-title mb-5 text-[13px] font-semibold uppercase tracking-[0.16em] text-white/45">Services</h4></div><div class="tp-footer-widget__list"><ul class="space-y-2 text-sm text-white/65"><li><a class="hover:text-white" href="services.html">Développement Web/Mobile</a></li><li><a class="hover:text-white" href="services.html">Développement Desktop</a></li><li><a class="hover:text-white" href="services.html">Mise à Jour et Maintenance</a></li><li><a class="hover:text-white" href="services.html">Consultance IA</a></li><li><a class="hover:text-white" href="services.html">Consultance IOT</a></li></ul></div></div></div>
+                        <div><div class="tp-footer-widget footer-space-two"><div class="tp-footer-widget__title"><h4 class="tp-footer-title mb-5 text-[13px] font-semibold uppercase tracking-[0.16em] text-white/45">Navigation</h4></div><div class="tp-footer-widget__list"><ul class="space-y-2 text-sm text-white/65"><li><a class="hover:text-white" href="index.html">Accueil</a></li><li><a class="hover:text-white" href="services.html">Services</a></li><li><a class="hover:text-white" href="realisation.html">Réalisations</a></li><li><a class="hover:text-white" href="about.html">A Propos</a></li><li><a class="hover:text-white" href="contact.html">Contact</a></li></ul></div></div></div>
+                        <div><div class="tp-footer-widget"><div class="tp-footer-widget__title"><h4 class="tp-footer-title mb-5 text-[13px] font-semibold uppercase tracking-[0.16em] text-white/45">Contacts</h4></div><div class="tp-footer-widget__list"><ul class="footer-position space-y-3 text-sm text-white/65"><li><a class="hover:text-white" href="https://www.google.com/maps/place/Laxtech+(Lax+technologies)+est+une+Soci%C3%A9t%C3%A9+par+Action+Simplifi%C3%A9e+(S.A.S)/@-4.3075683,15.3214008,15z/data=!4m6!3m5!1s0x1a6a340e8c679b65:0x574ef77b1f6a19f4!8m2!3d-4.3075683!4d15.3214008!16s%2Fg%2F11sc7j0g5j?entry=ttu" target="_blank"><span><i class="fal fa-map-marker-alt"></i></span> Concession Procoki N°1 OUA.</a></li><li><a class="hover:text-white" href="mailto:contact@laxtech.pro"><span><i class="fal fa-envelope"></i></span>Contact@Laxtech.pro</a></li><li><a class="hover:text-white" href="tel:+243810843164"><span><i class="fal fa-phone-alt"></i></span>+243 810 843 164</a></li></ul></div></div></div>
+                    </div>
+                </div>
+                <br class="hidden"><br class="hidden"><br class="hidden">
+                <div class="copy-right-wrapper footer-border-top mt-12 border-t border-white/10 pt-6"><div class="copyright-left text-center text-sm text-white/50 lg:text-left"><p>Copyright © 2026, Lax Technologies. Tous droits réservés</p></div></div>
             </div>
-            <div class="tp-info-wrapper mb-20 d-flex align-items-center">
-               <div class="tpoffcanvas__info-icon">
-                  <a href="#"><i class="fal fa-phone-alt"></i></a>
-               </div>
-               <div class="tpoffcanvas__info-address">
-                  <span>Téléphone</span>
-                  <a href="tel:+243810843164">+243 810 843 164</a>
-               </div>
-            </div>
-            <div class="tp-info-wrapper mb-20 d-flex align-items-center">
-               <div class="tpoffcanvas__info-icon">
-                  <a href="#"><i class="fas fa-map-marker-alt"></i></a>
-               </div>
-               <div class="tpoffcanvas__info-address">
-                  <span>Localisation</span>
-                  <a href="https://www.google.com/maps/place/Laxtech+(Lax+technologies)+est+une+Soci%C3%A9t%C3%A9+par+Action+Simplifi%C3%A9e+(S.A.S)/@-4.3075683,15.3214008,15z/data=!4m6!3m5!1s0x1a6a340e8c679b65:0x574ef77b1f6a19f4!8m2!3d-4.3075683!4d15.3214008!16s%2Fg%2F11sc7j0g5j?entry=ttu"
-                    target="_blank"></a>277 Avenue Isangi, Quartier du 30 Juin Commune de Lingwala.
-                  <a href="https://www.google.com/maps/place/Laxtech+(Lax+technologies)+est+une+Soci%C3%A9t%C3%A9+par+Action+Simplifi%C3%A9e+(S.A.S)/@-4.3075683,15.3214008,15z/data=!4m6!3m5!1s0x1a6a340e8c679b65:0x574ef77b1f6a19f4!8m2!3d-4.3075683!4d15.3214008!16s%2Fg%2F11sc7j0g5j?entry=ttu"
-                    target="_blank"></a>Ref : Route 24 Novembre.
-               </div>
-            </div>
-         </div>
-         <div class="tpoffcanvas__social">
-            <div class="social-icon">
-               <a href="#"><i class="fab fa-twitter"></i></a>
-               <a href="#"><i class="fab fa-instagram"></i></a>
-               <a href="#"><i class="fab fa-facebook-square"></i></a>
-            </div>
-         </div>
-      </div>
-   </div>
+        </div>
+    </footer>
 
-   <main>
-
-      <section class="breadcrumb__area breadcrumb-height include-bg p-relative"
-         data-background="assets/img/breadcrumb/breadcurmb.jpg">
-         <div class="container">
-            <div class="row">
-               <div class="col-xxl-12">
-                  <div class="breadcrumb__content">
-                     <h3 class="breadcrumb__title wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".5s">Nos
-                        Services </h3>
-                     <div class="breadcrumb__list wow tpfadeUp" data-wow-duration=".9s">
-                        <span><a href="index.html">Accueil</a></span>
-                        <span class="dvdr"><i class="fa fa-angle-right"></i></span>
-                        <span>Nos Services</span>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <div class="tp-service-area pt-120 pb-100">
-         <div class="container">
-            <div class="row">
-               <div class="col-xl-6 col-lg-6 mb-30  wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".3s">
-                  <div class="service-item-three text-center item1">
-                     <div class="service-item-three__img">
-                        <img src="assets/img/service/sv-4.png" alt="">
-                     </div>
-                     <div class="service-item-three__content">
-                        <h4 class="tp-service-sm-title"><a href="services.html">Développement <br> Informatique</a></h4>
-                        <p>Nous offrons des solutions personnalisées en développement informatique pour la création de
-                           sites, de plateformes e-commerce et d'applications mobiles performantes.</p>
-                     </div>
-                     <div class="service-item-three__button">
-                        <a href="prix.html">
-                           <span>
-                              <svg width="34" height="16" viewBox="0 0 34 16" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path
-                                    d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z"
-                                    fill="currentColor" />
-                              </svg>
-                           </span>Commander
-                        </a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-6 col-lg-6 mb-30  wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".5s">
-                  <div class="service-item-three active text-center item1">
-                     <div class="service-item-three__img">
-                        <img src="assets/img/service/sv-5.png" alt="">
-                     </div>
-                     <div class="service-item-three__content">
-                        <h4 class="tp-service-sm-title"><a href="services.html">Data Analyse,<br> Data Science et IA</a>
-                        </h4>
-                        <p>Nous créons des modèles d'IA avancés pour l'analyse de données, la prédiction et la
-                           résolution de problèmes complexes et personnalisées.</p>
-                     </div>
-                     <div class="service-item-three__button">
-                        <a href="contact.html">
-                           <span>
-                              <svg width="34" height="16" viewBox="0 0 34 16" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path
-                                    d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z"
-                                    fill="currentColor" />
-                              </svg>
-                           </span>Commander
-                        </a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-6 col-lg-6 mb-30  wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s">
-                  <div class="service-item-three active text-center item3">
-                     <div class="service-item-three__img">
-                        <img src="assets/img/service/sv-2.png" alt="">
-                     </div>
-                     <div class="service-item-three__content">
-                        <h4 class="tp-service-sm-title"><a href="contact.html">Développement IOT</a></h4>
-                        <p>Nous proposons des solutions dans le domaine de l'Internet des objets (IoT), que ce soit pour
-                           la domotique,
-                           l'automatisation industrielle ou autres applications.</p>
-                     </div>
-                     <div class="service-item-three__button">
-                        <a href="services.html">
-                           <span>
-                              <svg width="34" height="16" viewBox="0 0 34 16" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path
-                                    d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z"
-                                    fill="currentColor" />
-                              </svg>
-                           </span>Commander
-                        </a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-6 col-lg-6 mb-30  wow tpfadeUp" data-wow-duration=".7s" data-wow-delay="1s">
-                  <div class="service-item-three text-center item3">
-                     <div class="service-item-three__img">
-                        <img src="assets/img/service/sv-3.png" alt="">
-                     </div>
-                     <div class="service-item-three__content">
-                        <h4 class="tp-service-sm-title"><a href="contact.html">Numérisation des Entreprises</a></h4>
-                        <p>Nous offrons des solutions de numérisation d'entreprise intégrant l'Internet des objets (IoT)
-                           pour la domotique, l'automatisation industrielle et d'autres applications.</p>
-                     </div>
-                     <div class="service-item-three__button">
-                        <a href="contact.html">
-                           <span>
-                              <svg width="34" height="16" viewBox="0 0 34 16" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path
-                                    d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z"
-                                    fill="currentColor" />
-                              </svg>
-                           </span>Commander
-                        </a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="tp-marque-area fix">
-         <div class="tp-marque-wrapper">
-            <div class="marque-slider-active carousel-rtl" dir="rtl">
-               <div class="marque-item">
-                  <span>Penser.</span>
-               </div>
-               <div class="marque-item">
-                  <span>Développer.</span>
-               </div>
-               <div class="marque-item">
-                  <span>Innover.</span>
-               </div>
-               <div class="marque-item">
-                  <span>Servir.</span>
-               </div>
-               <div class="marque-item">
-                  <span>Améliorer.</span>
-               </div>
-               <div class="marque-item">
-                  <span>Simplifier.</span>
-               </div>
-            </div>
-         </div>
-         <div class="tp-marque-wrapper">
-            <div class="marque-slider-active-2">
-               <div class="marque-item">
-                  <span>Concevoir.</span>
-               </div>
-               <div class="marque-item">
-                  <span>Maintenir.</span>
-               </div>
-               <div class="marque-item">
-                  <span>Accompagner.</span>
-               </div>
-               <div class="marque-item">
-                  <span>Satisfaire.</span>
-               </div>
-               <div class="marque-item">
-                  <span>Compétitionner.</span>
-               </div>
-               <div class="marque-item">
-                  <span>Challenger.</span>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="tp-contact-area grey-bg pt-120 pb-120">
-         <div class="container">
-            <div class="tp-contact-wrapper p-relative">
-               <div class="tp-contact-shape d-none d-xl-block">
-                  <img src="assets/img/cta/cta-1.png" alt="">
-               </div>
-               <div class="row">
-                  <div class="col-xl-6 col-lg-6">
-                     <div class="contact-us-sction-box mb-60 text-general">
-                        <h4 class="tp-section-subtitle">Discutons</h4>
-                        <h3 class="tp-section-title-xs">Besoin de <br>Discuter?</h3>
-                     </div>
-                     <div class="contact-info">
-                        <div class="contact-info-item d-flex align-items-center">
-                           <div class="contact-icon">
-                              <img src="assets/img/contact/contact-1.png" alt="">
-                           </div>
-                           <div class="contact-loaction">
-                              <a href="file:///C:/Users/Henock%20Mkb/Documents/GitHub/Lax%20Technologiesassets/img/slider/hero-3.png"
-                                target="_blank"></a>277 Avenue Isangi, Quartier du 30 Juin Commune de Lingwala.
-                              <a href="file:///C:/Users/Henock%20Mkb/Documents/GitHub/Lax%20Technologiesassets/img/slider/hero-3.png"  
-                                target="_blank"></a>Ref : Route 24 Novembre.
-                           </div>
-                        </div>
-                        <div class="contact-info-item d-flex align-items-center">
-                           <div class="contact-icon">
-                              <img src="assets/img/contact/contact-2.png" alt="">
-                           </div>
-                           <div class="contact-loaction">
-                              <a href="mailto:contact@laxtech.pro"><span class="__cf_email__"
-                                    data-cfemail="a9dadcd9d9c6dbdde9cfc0cec4c887cac6c4">contact@laxtech.pro</span></a>
-                           </div>
-                        </div>
-                        <div class="contact-info-item d-flex align-items-center">
-                           <div class="contact-icon">
-                              <img src="assets/img/contact/contact-3.png" alt="">
-                           </div>
-                           <div class="contact-loaction">
-                              <a href="tel:+243810843164">+243 810 843 164</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6">
-                     <div class="tpcontact">
-                        <div class="tpcontact__heading">
-                           <h4 class="tp-contact-title mb-20 text-general">
-                              <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path
-                                    d="M22.9201 9.11169C22.8196 9.00949 22.6998 8.92831 22.5678 8.87286C22.4355 8.81732 22.2936 8.78872 22.1502 8.78872C22.0068 8.78872 21.8649 8.81732 21.7326 8.87286C21.6005 8.92835 21.4806 9.0096 21.38 9.1119C21.3799 9.11199 21.3798 9.11209 21.3797 9.11219L13.2476 17.2717L13.2281 17.2913L13.2214 17.3182L12.7524 19.2026L12.7121 19.3644L12.8738 19.3238L14.7499 18.8526L14.7768 18.8459L14.7964 18.8262L22.9197 10.6577C22.9198 10.6577 22.9198 10.6576 22.9199 10.6575C23.0218 10.5565 23.1027 10.4361 23.1579 10.3035C23.2131 10.1708 23.2415 10.0283 23.2415 9.88451C23.2415 9.74067 23.2131 9.59826 23.1579 9.46552C23.1027 9.33298 23.0219 9.2127 22.9201 9.11169ZM22.9201 9.11169C22.92 9.11154 22.9198 9.11141 22.9197 9.11127L22.8493 9.18228L22.9206 9.11219C22.9204 9.11202 22.9203 9.11186 22.9201 9.11169ZM15.1768 0.100017L15.1774 0.100013C15.2807 0.0994136 15.383 0.11929 15.4786 0.158513C15.5742 0.197727 15.6612 0.255516 15.7345 0.328588C15.7345 0.328604 15.7345 0.328619 15.7346 0.328635L19.2738 3.88363C19.2738 3.88364 19.2738 3.88364 19.2738 3.88365C19.3465 3.95734 19.4041 4.04475 19.4432 4.1409C19.4823 4.23705 19.5021 4.34002 19.5015 4.4439V4.44448V6.22227C19.5015 6.43164 19.4187 6.63234 19.2715 6.78026C19.1242 6.92815 18.9246 7.01116 18.7166 7.01116C18.5086 7.01116 18.309 6.92815 18.1617 6.78026C18.0145 6.63234 17.9317 6.43164 17.9317 6.22227V4.80893V4.76764L17.9025 4.73837L14.8849 1.70725L14.8556 1.6778H14.814H2.78764C2.52627 1.6778 2.2757 1.7821 2.09102 1.9676C1.90636 2.15309 1.8027 2.40457 1.8027 2.66669V22.2223C1.8027 22.4845 1.90636 22.736 2.09102 22.9214C2.2757 23.1069 2.52627 23.2112 2.78764 23.2112H16.9467C17.2081 23.2112 17.4587 23.1069 17.6433 22.9214C17.828 22.736 17.9317 22.4845 17.9317 22.2223V20.4446C17.9317 20.2352 18.0145 20.0345 18.1617 19.8866C18.309 19.7387 18.5086 19.6557 18.7166 19.6557C18.9246 19.6557 19.1242 19.7387 19.2715 19.8866C19.4187 20.0345 19.5015 20.2352 19.5015 20.4446V22.2223C19.5015 22.9032 19.2323 23.5561 18.7531 24.0374C18.2739 24.5187 17.6242 24.789 16.9467 24.789H2.78764C2.1102 24.789 1.46042 24.5187 0.981261 24.0374C0.502089 23.5561 0.232813 22.9032 0.232813 22.2223V2.66669C0.232813 1.98583 0.502089 1.33293 0.981262 0.85162C1.46042 0.370323 2.1102 0.100015 2.78764 0.100015L15.1768 0.100017ZM23.819 11.949H23.8652L15.7349 20.1156C15.7348 20.1157 15.7347 20.1158 15.7346 20.1159C15.6326 20.2166 15.5051 20.2874 15.366 20.3206L15.3649 20.3209L11.8251 21.2098L11.8251 21.2098L11.8222 21.2106C11.6896 21.2481 11.5495 21.2499 11.416 21.2157C11.2825 21.1816 11.1602 21.1127 11.0615 21.016C10.9628 20.9192 10.8912 20.798 10.8539 20.6646C10.8166 20.5311 10.8149 20.3902 10.849 20.2559L10.8492 20.2554L11.7341 16.6998L11.7344 16.6987C11.7675 16.5587 11.8381 16.4306 11.9384 16.3281C11.9384 16.328 11.9385 16.3279 11.9386 16.3278L20.2388 7.99061L20.2389 7.99071L20.2425 7.98667C20.4848 7.7154 20.7795 7.4966 21.1088 7.34361C21.438 7.19062 21.7948 7.10664 22.1574 7.09677C22.52 7.08691 22.8807 7.15137 23.2177 7.28624C23.5547 7.4211 23.8608 7.62355 24.1174 7.88124C24.3739 8.13893 24.5755 8.44646 24.7098 8.78508C24.8441 9.12369 24.9084 9.48626 24.8985 9.85065C24.8887 10.215 24.8051 10.5736 24.6527 10.9044C24.5003 11.2352 24.2825 11.5313 24.0124 11.7747L23.819 11.949ZM4.00264 16.331C4.14988 16.1831 4.34949 16.1001 4.55752 16.1001H8.09729C8.30533 16.1001 8.50494 16.1831 8.65217 16.331C8.79943 16.4789 8.88224 16.6796 8.88224 16.889C8.88224 17.0984 8.79943 17.2991 8.65218 17.447C8.50494 17.5949 8.30533 17.6779 8.09729 17.6779H4.55752C4.34949 17.6779 4.14988 17.5949 4.00264 17.447C3.85539 17.2991 3.77258 17.0984 3.77258 16.889C3.77258 16.6796 3.85539 16.4789 4.00264 16.331ZM4.55752 5.43337H12.522C12.73 5.43337 12.9296 5.51638 13.0769 5.66428C13.2241 5.81219 13.3069 6.0129 13.3069 6.22227C13.3069 6.43164 13.2241 6.63234 13.0769 6.78026C12.9296 6.92815 12.73 7.01116 12.522 7.01116H4.55752C4.34949 7.01116 4.14988 6.92815 4.00264 6.78026C3.85539 6.63234 3.77258 6.43164 3.77258 6.22227C3.77258 6.0129 3.85539 5.81219 4.00264 5.66428C4.14988 5.51638 4.34949 5.43337 4.55752 5.43337ZM13.0769 10.9976C13.2241 11.1455 13.3069 11.3463 13.3069 11.5556C13.3069 11.765 13.2241 11.9657 13.0769 12.1136C12.9296 12.2615 12.73 12.3445 12.522 12.3445H4.55752C4.34949 12.3445 4.14988 12.2615 4.00264 12.1136C3.85539 11.9657 3.77258 11.765 3.77258 11.5556C3.77258 11.3463 3.85539 11.1455 4.00264 10.9976C4.14988 10.8497 4.34949 10.7667 4.55752 10.7667H12.522C12.73 10.7667 12.9296 10.8497 13.0769 10.9976Z"
-                                    fill="#171717" stroke="#0F0F0F" stroke-width="0.2"></path>
-                              </svg>
-                              Remplissez le formulaire
-                           </h4>
-                        </div>
-                        <div class="tpcontact__form text-general">
-                           <form action="mailto:contact@laxtech.pro" method="get" enctype="text/plain">
-                               
-                              <input type="text" name="last_name" placeholder="Votre Nom" required="">
-                              <input type="email" name="email" placeholder="Votre Adresse Mail" required="">
-                              <textarea type="text" name="message" placeholder="Votre Message" required=""></textarea>
-                              <button type="submit" name="contact" class="tp-btn">Envoyer</button>
-                           </form>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </main>
-
-   <footer>
-      <!-- tp-footer-area-start -->
-      <div class="tp-footer-area pb-30 black-bg p-relative">
-         <div class="container">
-            <div class="footer-border-top pt-70">
-               <div class="footer-scroll scroll-to-target-2" data-target="html">
-                  <button><i class="far fa-arrow-up"></i></button>
-               </div>
-               <div class="row">
-                  <div class="col-md-2">
-                     <div class="tp-footer-widget z-index-3">
-                        <div class="tp-footer-widget__title">
-                           <h4 class="tp-footer-title">Produits</h4>
-                        </div>
-                        <div class="tp-footer-widget__list">
-                           <ul>
-                              <li><a href="https://www.medical.laxtech.pro/">Lax Medical</a></li>
-                              <li><a href="https://www.market.laxtech.pro/">Lax Market</a></li>
-                              <li><a href="#">I.M.A AI</a></li>
-                              <li><a href="http://mr.julishaafrica.com/">Mr.Julisha</a></li>
-                              <li><a href="https://www.esrudagritech.com/">Esrud Agri Tech</a></li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="tp-footer-widget footer-space-one z-index-3">
-                        <div class="tp-footer-widget__title">
-                           <h4 class="tp-footer-title">Services</h4>
-                        </div>
-                        <div class="tp-footer-widget__list">
-                           <ul>
-                              <li><a href="services.html">Développement Web/Mobile</a></li>
-                              <li><a href="services.html">Développement Desktop</a></li>
-                              <li><a href="services.html">Mise à Jour et Maintenance</a></li>
-                              <li><a href="services.html">Consultance IA</a></li>
-                              <li><a href="services.html">Consultance IOT</a></li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-3">
-                     <div class="tp-footer-widget footer-space-two z-index-3">
-                        <div class="tp-footer-widget__title">
-                           <h4 class="tp-footer-title">Navigation</h4>
-                        </div>
-                        <div class="tp-footer-widget__list">
-                           <ul>
-                              <li><a href="#">Accueil</a></li>
-                              <li><a href="blog-details.html">Services</a></li>
-                              <li><a href="#">Réalisations</a></li>
-                              <li><a href="#">A Propos</a></li>
-                              <li><a href="#">Contact</a></li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="col-md-3">
-                     <div class="tp-footer-widget z-index-3">
-                        <div class="tp-footer-widget__title">
-                           <h4 class="tp-footer-title">Contacts</h4>
-                        </div>
-                        <div class="tp-footer-widget__list">
-                           <ul class="footer-position">
-                              <li><a href="https://www.google.com/maps/place/Laxtech+(Lax+technologies)+est+une+Soci%C3%A9t%C3%A9+par+Action+Simplifi%C3%A9e+(S.A.S)/@-4.3075683,15.3214008,15z/data=!4m6!3m5!1s0x1a6a340e8c679b65:0x574ef77b1f6a19f4!8m2!3d-4.3075683!4d15.3214008!16s%2Fg%2F11sc7j0g5j?entry=ttu"
-                                    target="_blank">
-                                    <span><i class="fal fa-map-marker-alt"></i></span>
-                                    Concession Procoki N°1 OUA.</a>
-                              </li>
-                              <li><a href="mailto:contact@laxtech.pro">
-                                    <span><i class="fal fa-envelope"></i></span>contact@laxtech.pro</a>
-                              </li>
-                              <li><a href="tel:+243810843164">
-                                    <span><i class="fal fa-phone-alt"></i></span>+243 810 843 164</a>
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <br><br><br>
-            <div class="copy-right-wrapper footer-border-top pt-40 z-index-3">
-               <div class="row">
-                  <div class="col-xl-6 col-lg-7 col-12">
-                     <div class="copyright-left text-center text-lg-start">
-                        <p>Copyright © 2023, Lax Technologies. Tout droits réservés</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </footer>
-   <script src="assets/js/jquery.js"></script>
-   <script src="assets/js/waypoints.js"></script>
-   <script src="assets/js/bootstrap.bundle.min.js"></script>
-   <script src="assets/js/swiper-bundle.js"></script>
-   <script src="assets/js/slick.js"></script>
-   <script src="assets/js/magnific-popup.js"></script>
-   <script src="assets/js/counterup.js"></script>
-   <script src="assets/js/wow.js"></script>
-   <script src="assets/js/nice-select.js"></script>
-   <script src="assets/js/meanmenu.js"></script>
-   <script src="assets/js/isotope-pkgd.js"></script>
-   <script src="assets/js/imagesloaded-pkgd.js"></script>
-   <script src="assets/js/ajax-form.js"></script>
-   <script src="assets/js/main.js"></script>
+    <script src="assets/js/home.js"></script>
 </body>
 
 </html>

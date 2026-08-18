@@ -1,821 +1,468 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
 
 <head>
-   <meta charset="utf-8">
-   <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <title>Lax Technologies - A Propos</title>
-   <meta name="description" content="">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
-   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-   <link rel="stylesheet" href="assets/css/animate.css">
-   <link rel="stylesheet" href="assets/css/custom-animation.css">
-   <link rel="stylesheet" href="assets/css/swiper-bundle.css">
-   <link rel="stylesheet" href="assets/css/slick.css">
-   <link rel="stylesheet" href="assets/css/nice-select.css">
-   <link rel="stylesheet" href="assets/css/flaticon.css">
-   <link rel="stylesheet" href="assets/css/meanmenu.css">
-   <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
-   <link rel="stylesheet" href="assets/css/magnific-popup.css">
-   <link rel="stylesheet" href="assets/css/spacing.css">
-   <link rel="stylesheet" href="assets/css/style.css">
+    <script>(function(){try{var t=localStorage.getItem("lt-theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t);document.documentElement.style.colorScheme=t;if(t==="dark"){document.documentElement.style.backgroundColor="#08080a";document.documentElement.style.color="#f2f2f4";}}catch(e){}})();</script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Lax Technologies - A Propos</title>
+    <meta name="google-site-verification" content="g6tLT3F6uqJlwWEKKx7wt1d8qgIENmD6boYRLuR5zSc" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#0a0a0a",
+              paper: "#fafafa",
+              line: "#ececee",
+              muted: "#6b7280",
+              brand: { DEFAULT: "#3475ba", hover: "#2b63a0", soft: "#f3f7fb" }
+            },
+            fontFamily: {
+              sans: ["Manrope", "ui-sans-serif", "system-ui", "sans-serif"]
+            },
+            boxShadow: {
+              lift: "0 1px 2px rgba(10,10,10,.03), 0 10px 28px rgba(10,10,10,.04)"
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="assets/css/home-tw.css" />
+    <meta name="keywords" content="Technologie Afrique, innovation, digitalisation, informatique, web, developpement web" />
+    <meta name="author" content="Lax technologies SAS" />
+    <meta name="description" content="Au cœur de l'innovation technologique en Afrique" />
+    <meta property="og:title" content="Au cœur de l'innovation technologique en Afrique" />
+    <meta property="og:description" content="Des solutions numériques adaptées à vos besoin" />
+    <meta property="og:image" content="assets/img/about/Presentation 2.jpg" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HYSSPHWGNH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-HYSSPHWGNH");
+    </script>
 </head>
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HYSSPHWGNH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-HYSSPHWGNH');
-</script>
+<body class="bg-white font-sans text-ink antialiased">
+    <a class="lt-skip" href="#main">Aller au contenu</a>
+    <div id="preloader" class="fixed inset-0 z-[80] flex items-center justify-center bg-white" role="status" aria-label="Chargement">
+        <div class="preloader lt-preloader">
+            <span class="lt-preloader-mark" aria-hidden="true"><img src="assets/img/favicon.png" alt="" /></span>
+        </div>
+    </div>
 
-<body>
-   <header>
-      <div id="preloader"">
-         <div class=" preloader">
-         <span></span>
-         <span></span>
-      </div>
-      </div>
-      <button class="scroll-top scroll-to-target" data-target="html">
-         <i class="far fa-angle-double-up"></i>
-      </button>
-      <div id="header-sticky" class="tp-header-area header-pl-pr header-transparent">
-         <div class="container-fluid">
-            <div class="row g-0 align-items-center">
-               <div class="col-xl-2 col-lg-2 col-md-4 col-6">
-                  <div class="tp-logo tp-logo-border">
-                     <a href="home.html">
-                        <img src="assets/img/logo/logo.png" alt="">
-                     </a>
-                  </div>
-               </div>
-               <div class="col-xl-10 col-lg-10 col-md-8 col-6 d-flex justify-content-center">
-                  <div class="tp-main-menu d-none d-xl-block">
-                     <div class="mean-push"></div>
-                     <nav id="mobile-menu" style="display: none;">
-                        <ul>
-                           <li><a href="index.html">Accueil</a>
-                           </li>
-                           <li><a href="produits.html">Produits</a></li>
-                           <li><a href="https://platform.laxtech.pro/" target="_blank" rel="noopener">Lax Platform</a></li>
-                           <li><a href="services.html">Services</a></li>
-                           <li><a href="realisation.html">Réalisations</a></li>
-                           <li><a href="about.html">A Propos</a></li>
-                           <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                     </nav>
-                  </div>
-                  <div class="tp-header-right">
-                     <div class="header-right-three d-flex justify-content-end nav_reduce">
-                        <button class="bars tp-menu-bar text-black">
-                           <i class="fal fa-bars"></i>
+    <button class="scroll-top scroll-to-target pointer-events-none fixed bottom-6 right-6 z-40 flex h-11 w-11 items-center justify-center rounded-full border border-black/10 bg-white text-ink opacity-0 transition hover:border-brand hover:text-brand" data-target="html">
+        <i class="far fa-angle-double-up"></i>
+    </button>
+
+    <header>
+        <div id="header-sticky" class="tp-header-area tp-md-space header-three z-index-5 fixed inset-x-0 top-0 z-50 px-5 pt-4 sm:px-8 lg:px-12 xl:px-16">
+            <div class="lt-header-shell mx-auto flex max-w-7xl items-center gap-3 rounded-full border border-black/[0.06] bg-white/65 px-2 py-1.5 pl-3 backdrop-blur-2xl sm:px-3">
+                <div class="tp-logo shrink-0">
+                    <a href="index.html" class="lt-logo flex items-center">
+                        <img src="assets/img/logo/logo.png" alt="Lax Technologies" class="lt-logo--light h-8 w-auto sm:h-9" /><img src="assets/img/logo/logo-white.png" alt="Lax Technologies" class="lt-logo--dark h-8 w-auto sm:h-9" />
+                    </a>
+                </div>
+                <nav class="lt-desk-nav mx-auto hidden min-w-0 lg:block" aria-label="Navigation principale">
+                    <ul class="lt-nav-track flex items-center gap-0.5 rounded-full p-0.5">
+                        <li><a class="lt-nav-link" href="index.html">Accueil</a></li>
+                        <li><a class="lt-nav-link" href="https://platform.laxtech.pro/" target="_blank" rel="noopener">Lax Platform</a></li>
+                        <li><a class="lt-nav-link" href="services.html">Services</a></li>
+                        <li><a class="lt-nav-link" href="realisation.html">Réalisations</a></li>
+                        <li><a class="lt-nav-link" href="about.html" aria-current="page">A Propos</a></li>
+                        <li><a class="lt-nav-cta" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="lt-header-end ml-auto flex shrink-0 items-center gap-1.5 lg:ml-0">
+                    <div class="tp-social-menu hidden md:block">
+                        <nav>
+                            <ul class="flex items-center gap-1">
+                                <li><a class="lt-social" href="https://web.facebook.com/laxtechnologie"><img src="assets/img/header/fb.png" alt="Facebook" /> <span>Facebook</span></a></li>
+                                <li><a class="lt-social" href="https://www.linkedin.com/company/87976550"><img src="assets/img/header/in.png" alt="LinkedIn" /> <span>LinkedIn</span></a></li>
+                                <li><a class="lt-social" href="https://www.instagram.com/laxtechnologies/"><img src="assets/img/header/insta.png" alt="Instagram" /> <span>Instagram</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="tp-header-3-menu hidden">
+                        <nav id="mobile-menu-2">
+                            <ul>
+                                <li><a href="index.html">Accueil</a></li>
+                                <li><a href="https://platform.laxtech.pro/" target="_blank" rel="noopener">Lax Platform</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="realisation.html">Réalisations</a></li>
+                                <li><a href="about.html">A Propos</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <button class="lt-theme" type="button" data-lt-theme aria-pressed="false" aria-label="Activer le mode sombre"><i class="fal fa-sun lt-theme__sun" aria-hidden="true"></i><i class="fal fa-moon lt-theme__moon" aria-hidden="true"></i></button><div class="header-right-three">
+                        <button class="bars tp-menu-bar flex h-10 w-10 items-center justify-center rounded-full bg-ink text-white lg:hidden" type="button" aria-label="Ouvrir le menu">
+                            <i class="fal fa-bars"></i>
                         </button>
-                     </div>
-                     <ul>
-                        <li class=" d-none d-md-inline-block search-wrapper">
-                           <div class="tp-hero__button">
-                              <a class="tp-btn-secondaire tp-btn" href="contact.html">Obtenir Un Devis</a>
-                           </div>
-                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-                     </ul>
-                  </div>
-               </div>
+    <div class="tp-offcanvas-area">
+        <div id="lt-drawer" class="tpoffcanvas lt-drawer fixed inset-y-0 right-0 z-[70] flex w-full max-w-md flex-col overflow-y-auto bg-ink p-8 text-white">
+            <div class="tpoffcanvas__close-btn mb-8 flex justify-end">
+                <button class="close-btn flex h-11 w-11 items-center justify-center rounded-xl bg-white/10" type="button" aria-label="Fermer"><i class="fal fa-times"></i></button>
             </div>
-         </div>
-      </div>
-   </header>
-   <div class="tp-offcanvas-area">
-      <div class="tpoffcanvas">
-         <div class="tpoffcanvas__close-btn">
-            <button class="close-btn"><i class="fal fa-times"></i></button>
-         </div>
-         <div class="tpoffcanvas__logo">
-            <a href="index.html">
-               <img src="assets/img/logo/logo-white.png" alt="" />
-            </a>
-         </div>
-         <div class="mobile-menu"></div>
-         <div class="tpoffcanvas__info">
-            <h3 class="offcanva-title">Entrer en contact</h3>
-            <div class="tp-info-wrapper mb-20 d-flex align-items-center">
-               <div class="tpoffcanvas__info-icon">
-                  <a href="#"><i class="fal fa-envelope"></i></a>
-               </div>
+            <div class="tpoffcanvas__logo mb-8">
+                <a href="index.html">
+                    <img src="assets/img/logo/logo-white.png" alt="Lax Technologies" class="h-10 w-auto" />
+                </a>
+            </div>
+            <div class="mobile-menu mb-8 space-y-1 text-sm font-semibold">
+                <a class="block rounded-lg px-2 py-2 hover:bg-white/10" href="index.html">Accueil</a>
+                <a class="block rounded-lg px-2 py-2 hover:bg-white/10" href="https://platform.laxtech.pro/" target="_blank" rel="noopener">Lax Platform</a>
+                <a class="block rounded-lg px-2 py-2 hover:bg-white/10" href="services.html">Services</a>
+                <a class="block rounded-lg px-2 py-2 hover:bg-white/10" href="realisation.html">Réalisations</a>
+                <a class="block rounded-lg px-2 py-2 hover:bg-white/10" href="about.html">A Propos</a>
+                <a class="block rounded-lg px-2 py-2 hover:bg-white/10" href="contact.html">Contact</a>
+            </div>
+            <div class="tpoffcanvas__info space-y-5">
+                <h3 class="offcanva-title text-lg font-semibold tracking-tight">Entrer en contact</h3>
+                <div class="tp-info-wrapper mb-20 flex items-center gap-4">
+                    <div class="tpoffcanvas__info-icon">
+                        <a class="flex h-11 w-11 items-center justify-center rounded-xl bg-white/10" href="mailto:contact@laxtech.pro" aria-label="Écrire un e-mail"><i class="fal fa-envelope"></i></a>
+                    </div>
+                    <div class="tpoffcanvas__info-address">
+                        <span class="block text-xs uppercase tracking-wider text-white/50">Adresse Mail</span>
+                        <a class="font-semibold hover:text-brand" href="mailto:contact@laxtech.pro">Contact@laxtech.pro</a>
+                    </div>
+                </div>
+                <div class="tp-info-wrapper mb-20 flex items-center gap-4">
+                    <div class="tpoffcanvas__info-icon">
+                        <a class="flex h-11 w-11 items-center justify-center rounded-xl bg-white/10" href="tel:+243810843164" aria-label="Appeler"><i class="fal fa-phone-alt"></i></a>
+                    </div>
+                    <div class="tpoffcanvas__info-address">
+                        <span class="block text-xs uppercase tracking-wider text-white/50">Téléphone</span>
+                        <a class="font-semibold hover:text-brand" href="tel:+243810843164">+243 810 843 164</a>
+                    </div>
+                </div>
+                <div class="tp-info-wrapper mb-20 flex items-center gap-4">
+                    <div class="tpoffcanvas__info-icon">
+                        <a class="flex h-11 w-11 items-center justify-center rounded-xl bg-white/10" href="https://maps.google.com/?q=Laxtech+Kinshasa" target="_blank" rel="noopener" aria-label="Voir sur la carte"><i class="fas fa-map-marker-alt"></i></a>
+                    </div>
+                    <div class="tpoffcanvas__info-address">
+                        <span class="block text-xs uppercase tracking-wider text-white/50">Localisation</span>
+                        <a class="font-semibold hover:text-brand" href="https://www.google.com/maps/place/Laxtech+(Lax+technologies)+est+une+Soci%C3%A9t%C3%A9+par+Action+Simplifi%C3%A9e+(S.A.S)/@-4.3075683,15.3214008,15z/data=!4m6!3m5!1s0x1a6a340e8c679b65:0x574ef77b1f6a19f4!8m2!3d-4.3075683!4d15.3214008!16s%2Fg%2F11sc7j0g5j?entry=ttu" target="_blank" rel="noopener">Concession Procoki N°1 OUA.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tpoffcanvas__social mt-auto pt-10">
+                <div class="social-icon flex gap-3 text-lg">
+                    <a class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-brand" href="https://www.linkedin.com/company/87976550" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-brand" href="https://www.instagram.com/laxtechnologies/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-brand" href="https://web.facebook.com/laxtechnologie" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-               <div class="tpoffcanvas__info-address">
-                  <span>Adresse Mail</span>
-                  <a href="mailto:contact@laxtech.pro">contact@laxtech.pro</a>
-               </div>
-            </div>
-            <div class="tp-info-wrapper mb-20 d-flex align-items-center">
-               <div class="tpoffcanvas__info-icon">
-                  <a href="#"><i class="fal fa-phone-alt"></i></a>
-               </div>
-               <div class="tpoffcanvas__info-address">
-                  <span>Téléphone</span>
-                  <a href="tel:+243810843164">+243 810 843 164</a>
-               </div>
-            </div>
-            <div class="tp-info-wrapper mb-20 d-flex align-items-center">
-               <div class="tpoffcanvas__info-icon">
-                  <a href="#"><i class="fas fa-map-marker-alt"></i></a>
-               </div>
-               <div class="tpoffcanvas__info-address">
-                  <span>Localisation</span>
-                  <a href="https://www.google.com/maps/place/Laxtech+(Lax+technologies)+est+une+Soci%C3%A9t%C3%A9+par+Action+Simplifi%C3%A9e+(S.A.S)/@-4.3075683,15.3214008,15z/data=!4m6!3m5!1s0x1a6a340e8c679b65:0x574ef77b1f6a19f4!8m2!3d-4.3075683!4d15.3214008!16s%2Fg%2F11sc7j0g5j?entry=ttu"
-                     target="_blank">Concession Procoki N°1 OUA.
-                  </a>
-               </div>
-            </div>
-         </div>
-         <div class="tpoffcanvas__social">
-            <div class="social-icon">
-               <a href="#"><i class="fab fa-twitter"></i></a>
-               <a href="#"><i class="fab fa-instagram"></i></a>
-               <a href="#"><i class="fab fa-facebook-square"></i></a>
-            </div>
-         </div>
-      </div>
-   </div>
+    <div id="lt-overlay" class="body-overlay lt-overlay pointer-events-none fixed inset-0 z-[60] bg-ink/40 opacity-0"></div>
 
-   <div class="body-overlay"></div>
-   <main>
-      <section class="breadcrumb__area breadcrumb-height include-bg p-relative"
-         data-background="assets/img/breadcrumb/breadcurmb.jpg">
-         <div class="container">
-            <div class="row">
-               <div class="col-xxl-12">
-                  <div class="breadcrumb__content">
-                     <h3 class="breadcrumb__title wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".5s">A Propos
-                     </h3>
-                     <div class="breadcrumb__list wow tpfadeUp" data-wow-duration=".9s">
-                        <span><a href="index.html">Accueil</a></span>
-                        <span class="dvdr"><i class="fa fa-angle-right"></i></span>
-                        <span>A Propos</span>
-                     </div>
-                  </div>
-               </div>
+    <main id="main" class="pt-24">
+        <section class="lt-page-hero relative overflow-hidden">
+            <div class="lt-grid pointer-events-none absolute inset-0"></div>
+            <div class="pointer-events-none absolute -right-20 top-0 h-72 w-72 rounded-full bg-[radial-gradient(circle,_rgba(52,117,186,0.14),_transparent_68%)] blur-3xl"></div>
+            <div class="container mx-auto max-w-7xl px-6 sm:px-10 lg:px-16 xl:px-20">
+                <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-muted">Accueil / A Propos</p>
+                <h1 class="mt-5 text-5xl font-light tracking-tight text-ink md:text-6xl">A Propos</h1>
             </div>
-         </div>
-      </section>
-      <br><br>
-      <div class="tp-cta-area cta-space-three pt-50 pb-50 text-general">
-         <div class="container">
-            <div class="row">
-               <div class="col-xl-6 col-lg-6 wow tpfadeLeft" data-wow-duration=".7s" data-wow-delay=".5s"
-                  style="visibility: visible; animation-duration: 0.7s; animation-delay: 0.5s; animation-name: tpfadeLeft;">
-                  <div class="ab-inner-content">
-                     <h4 class="ab-title-xs mb-25">
-                        Lax Technologies, c'est quoi ?
-                     </h4>
-                     <p>
-                        Laxtech est une entreprise engagée dans le développement technologique et l'innovation en
-                        <b>République démocratique du Congo</b> et en <b>Afrique</b>. Nous sommes déterminés à fournir des solutions
-                        de pointe pour
-                        résoudre les problèmes réel de notre société. <br><br>Nous
-                        sommes
-                        une équipe passionnée et compétente, composée d'experts en technologie, en marketing et en
-                        communication. Nous combinons notre expertise et notre créativité pour concevoir et mettre en
-                        œuvre des solutions digitales sur mesure, adaptées aux besoins spécifiques de nos clients.
-                  </div>
-               </div>
-               <div class="col-xl-6 col-lg-6 wow tpfadeRight mt-30" data-wow-duration=".7s" data-wow-delay=".8s"
-                  style="visibility: visible; animation-duration: 0.7s; animation-delay: 0.8s; animation-name: tpfadeRight;">
-                  <div class="tp-img-inner text-end">
-                     <div class="row gx-3">
-                        <div class="">
-                           <div class="ab-inner-img">
-                              <img src="assets/img/about/Presentation.jpg" alt="">
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <br><br><br>
-         </div>
-      </div>
-      <div class="tp-counter-area pb-20">
-         <div class="container">
-            <div class="row">
-               <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-30 wow tpfadeUp" data-wow-duration=".7s"
-                  data-wow-delay=".5s">
-                  <div class="counter-item text-center">
-                     <h4><span class="counter">100</span>+</h4>
-                     <h3>Clients Satisfaits</h3>
-                  </div>
-               </div>
-               <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-30 wow tpfadeUp" data-wow-duration=".7s"
-                  data-wow-delay=".7s">
-                  <div class="counter-item text-center">
-                     <h4><span class="counter">20</span>+</h4>
-                     <h3>Projets en Ligne</h3>
-                  </div>
-               </div>
-               <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-30 wow tpfadeUp" data-wow-duration=".7s"
-                  data-wow-delay=".9s">
-                  <div class="counter-item text-center">
-                     <h4><span class="counter">15</span>+</h4>
-                     <h3>Applications</h3>
-                  </div>
-               </div>
-               <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-30 wow tpfadeUp" data-wow-duration=".7s"
-                  data-wow-delay="1s">
-                  <div class="counter-item text-center">
-                     <h4><span class="counter">10</span>+</h4>
-                     <h3>Projects IOT</h3>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="tp-cta-area cta-space-three pt-50 pb-50 text-general">
-         <div class="container">
-            <div class="row">
-               <div class="col-xl-6 col-lg-6 wow tpfadeLeft" data-wow-duration=".7s" data-wow-delay=".5s"
-                  style="visibility: visible; animation-duration: 0.7s; animation-delay: 0.5s; animation-name: tpfadeLeft;">
-                  <div class="ab-inner-content">
-                     <h4 class="ab-title-xs mb-25">
-                        Notre Mission et Objectif
-                     </h4>
-                     <p>
-                        Notre mission est d'offrir des <strong>services digitales innovantes</strong> et sur mesure à nos clients, les
-                        aidant ainsi à prospérer dans le monde du numérique et de développer des solutions qui répondent
-                        aux problèmes réels de la société. <br><br>
+        </section>
 
-                        En tant que partenaire de confiance, notre objectif est de fournir des résultats
-                        exceptionnels, de repousser les limites de l'innovation et de contribuer activement à la croissance et au progrès technologique en <b>République démocratique du Congo</b> et en <b>Afrique</b> en exploitant les opportunités offertes par la révolution numérique.
-                     </p>
-                  </div>
-               </div>
-               <div class="col-xl-6 col-lg-6 wow tpfadeRight mt-30" data-wow-duration=".7s" data-wow-delay=".8s"
-                  style="visibility: visible; animation-duration: 0.7s; animation-delay: 0.8s; animation-name: tpfadeRight;">
-                  <div class="tp-img-inner text-end">
-                     <div class="row gx-3">
-                        <div class="">
-                           <div class="ab-inner-img">
-                              <img src="assets/img/about/Presentation 2.jpg" alt="">
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+        <section class="pb-16">
+            <div class="container mx-auto max-w-7xl px-6 sm:px-10 lg:px-16 xl:px-20">
+                <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+                    <div class="ab-inner-content">
+                        <p class="mb-4 text-[11px] font-semibold uppercase tracking-[0.22em] text-muted">A Propos</p>
+                        <h2 class="text-3xl font-semibold tracking-[-0.03em] sm:text-4xl">Lax Technologies, c'est quoi ?</h2>
+                        <p class="mt-6 max-w-[62ch] text-base leading-8 text-muted">
+                            Laxtech est une entreprise engagée dans le développement technologique et l'innovation en <b>République démocratique du Congo</b> et en <b>Afrique</b>. Nous sommes déterminés à fournir des solutions de pointe pour résoudre les problèmes réel de notre société. <br><br>Nous sommes une équipe passionnée et compétente, composée d'experts en technologie, en marketing et en communication. Nous combinons notre expertise et notre créativité pour concevoir et mettre en œuvre des solutions digitales sur mesure, adaptées aux besoins spécifiques de nos clients.
+                        </p>
+                    </div>
+                    <div class="tp-img-inner">
+                        <img src="assets/img/about/Presentation.jpg" alt="" class="w-full rounded-[28px] object-cover shadow-lift" />
+                    </div>
+                </div>
             </div>
-            <br><br><br>
-         </div>
-      </div>
-      <div class="tp-service-area service-space-bottom pb-110">
-         <div class="container">
-           <div class="row">
-             <div class="row g-0 justify-content-center">
-               <div class="col-xl-6">
-                 <div class="tp-case-title-box mb-60 text-center">
-                   <h3 class="tp-section-subtitle">Nos Services</h3>
-                   <h3 class="tp-section-title-sm">Découvrez Nos Différents Services
-                   </h3>
-                 </div>
-               </div>
-             </div>
-             <div class="col-xl-6 col-lg-6 wow tpfadeLeft" data-wow-duration=".7s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 0.7s; animation-delay: 0.5s; animation-name: tpfadeLeft;">
-               <div class="col-12 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s" style="visibility: visible; animation-duration: 0.7s; animation-delay: 0.9s; animation-name: tpfadeUp;">
-                 <div class="tp-service-item mb-20 d-flex justify-content-between">
-                   <div class="tp-service-item__content">
-                     <h4 class="tp-service-sm-title">
-                       <a href="services.html">Développement <br>
-                         Informatique</a>
-                     </h4>
-                     <div class="tp-service-item__button-link">
-                       <a href="services.html">
-                         <span>
-                           <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                             <path d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z" fill="currentColor"></path>
-                           </svg>
-                         </span>Découvrir
-                       </a>
-                     </div>
-                   </div>
-                   <div class="tp-service-item__icon">
-                     <span>
-                       <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                         <path d="M27.4713 0.293701H4.52875C2.03187 0.293701 0 2.32558 0 4.82308V19.1768C0 21.6743 2.03187 23.7062 4.52875 23.7062H27.4713C29.9681 23.7062 32 21.6743 32 19.1768V4.82308C32 2.32558 29.9681 0.293701 27.4713 0.293701ZM11.6131 7.49933L6.84875 12.2637L11.0856 16.5006C11.4519 16.8668 11.4519 17.4606 11.0856 17.8262C10.72 18.1925 10.1263 18.1925 9.76 17.8262L4.86 12.9262C4.49375 12.56 4.49375 11.9668 4.86 11.6006L10.2869 6.1737C10.6531 5.80745 11.2469 5.80745 11.6131 6.1737C11.9788 6.53933 11.9788 7.13308 11.6131 7.49933ZM19.3463 5.2937L14.3888 19.3306C14.2163 19.8193 13.6806 20.075 13.1925 19.9025C12.7044 19.73 12.4481 19.1943 12.6206 18.7062L17.5781 4.66933C17.7506 4.1812 18.2856 3.92495 18.7744 4.09745C19.2625 4.26995 19.5188 4.80558 19.3463 5.2937ZM27.14 12.3993L21.7131 17.8262C21.3469 18.1925 20.7531 18.1925 20.3869 17.8262C20.0212 17.4606 20.0212 16.8668 20.3869 16.5006L25.1513 11.7362L20.9144 7.49933C20.5481 7.13308 20.5481 6.53933 20.9144 6.1737C21.28 5.80745 21.8738 5.80745 22.24 6.1737L27.14 11.0737C27.5062 11.44 27.5062 12.0331 27.14 12.3993Z" fill="currentColor"></path>
-                       </svg>
-                     </span>
-                   </div>
-                 </div>
-   
-               </div>
-               <div class="col-12 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay="1s" style="visibility: visible; animation-duration: 0.7s; animation-delay: 1s; animation-name: tpfadeUp;">
-                 <div class="tp-service-item sv-color-blue-two mb-20 d-flex justify-content-between">
-                   <div class="tp-service-item__content">
-                     <h4 class="tp-service-sm-title">
-                       <a href="services.html">Développement IOT</a>
-                     </h4>
-                     <div class="tp-service-item__button-link">
-                       <a href="services.html">
-                         <span>
-                           <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                             <path d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z" fill="currentColor"></path>
-                           </svg>
-                         </span>Découvrir
-                       </a>
-                     </div>
-                   </div>
-                   <div class="tp-service-item__icon">
-                     <span>
-                       <svg width="40" height="40" style="fill: currentColor;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.75 125.28" xml:space="preserve">
-                         <style type="text/css">
-                           .st0 {
-                             fill-rule: evenodd;
-                             clip-rule: evenodd;
-                           }
-                         </style>
-                         <g>
-                           <path class="st0" d="M111.09,6.23c3.85,3.85,6.23,9.16,6.23,15.04s-2.38,11.19-6.23,15.04c-3.85,3.85-9.16,6.23-15.03,6.23 c-3.02,0-5.89-0.63-8.49-1.76l-1.97,3.72c6.61,4.42,10.97,11.95,10.97,20.49c0,7.21-3.1,13.7-8.04,18.21l2.03,2.6 c3.2-1.92,6.94-3.03,10.94-3.03c5.87,0,11.19,2.38,15.03,6.23c3.85,3.85,6.23,9.16,6.23,15.04s-2.38,11.19-6.23,15.04 c-3.85,3.85-9.16,6.23-15.03,6.23s-11.19-2.38-15.04-6.23s-6.23-9.16-6.23-15.04s2.38-11.19,6.23-15.04 c0.12-0.12,0.24-0.23,0.36-0.35l-1.98-2.67c-3.75,2.31-8.17,3.64-12.9,3.64c-8.76,0-16.46-4.58-20.82-11.47l-11.85,6.15 c2.06,3.28,3.25,7.15,3.25,11.31c0,5.87-2.38,11.19-6.23,15.03c-3.85,3.85-9.16,6.23-15.04,6.23c-5.87,0-11.19-2.38-15.03-6.23 C2.38,106.78,0,101.46,0,95.59S2.38,84.4,6.23,80.55s9.16-6.23,15.03-6.23s11.19,2.38,15.04,6.23l0.03,0.04l12.69-6.59 c-1.1-2.79-1.7-5.84-1.7-9.02c0-4.61,1.27-8.93,3.48-12.62l-8.07-6.27c-0.2,0.22-0.41,0.44-0.62,0.65 c-3.85,3.85-9.16,6.23-15.03,6.23s-11.19-2.38-15.03-6.23c-3.85-3.85-6.23-9.16-6.23-15.04s2.38-11.19,6.23-15.03 c3.85-3.85,9.16-6.23,15.03-6.23s11.19,2.38,15.03,6.23c3.85,3.85,6.23,9.16,6.23,15.03c0,3.89-1.04,7.53-2.86,10.67l8.06,6.26 c4.51-5.07,11.08-8.27,18.41-8.27c3.4,0,6.63,0.69,9.58,1.93l2.03-3.82c-0.9-0.65-1.74-1.38-2.52-2.16 c-3.85-3.85-6.23-9.16-6.23-15.04s2.38-11.19,6.23-15.04C84.87,2.38,90.19,0,96.06,0S107.25,2.38,111.09,6.23L111.09,6.23z M74.95,71.04c0.65,0.65,1.05,1.54,1.05,2.53c0,0.98-0.4,1.88-1.05,2.53c-0.65,0.65-1.54,1.05-2.52,1.05 c-0.99,0-1.88-0.4-2.53-1.05c-0.65-0.65-1.05-1.54-1.05-2.53c0-0.98,0.4-1.88,1.05-2.53c0.65-0.65,1.54-1.05,2.53-1.05 C73.4,69.99,74.3,70.39,74.95,71.04L74.95,71.04z M79.33,55.48c2.18,1.01,4.34,2.49,6.45,4.48c0.34,0.32,0.51,0.74,0.53,1.17 c0.01,0.43-0.14,0.86-0.45,1.2l-0.04,0.04c-0.31,0.31-0.72,0.47-1.13,0.48c-0.43,0.01-0.86-0.14-1.19-0.45l-0.03-0.03 c-1.8-1.69-3.63-2.96-5.45-3.81c-1.85-0.86-3.7-1.3-5.53-1.33c-1.86-0.03-3.72,0.36-5.58,1.15c-1.87,0.8-3.73,2.01-5.55,3.62 c-0.03,0.03-0.06,0.06-0.1,0.08c-0.34,0.27-0.75,0.39-1.14,0.36c-0.41-0.02-0.82-0.2-1.12-0.53c-0.03-0.03-0.06-0.06-0.08-0.1 c-0.27-0.33-0.39-0.75-0.36-1.15c0.03-0.43,0.22-0.84,0.56-1.15c2.13-1.89,4.33-3.31,6.58-4.26c2.25-0.95,4.54-1.41,6.85-1.37 C74.81,53.92,77.08,54.44,79.33,55.48L79.33,55.48z M76.61,62.46c1.33,0.51,2.64,1.28,3.9,2.31l0.04,0.03 c0.34,0.29,0.54,0.69,0.58,1.11c0.04,0.41-0.07,0.85-0.35,1.2l-0.04,0.05c-0.29,0.34-0.69,0.54-1.11,0.59 c-0.42,0.04-0.87-0.08-1.23-0.37c-0.98-0.8-1.97-1.39-2.97-1.78c-1-0.39-2.01-0.59-3.01-0.58c-1,0-2.02,0.21-3.02,0.61 c-1.02,0.4-2.03,1.01-3.01,1.8c-0.36,0.29-0.8,0.41-1.23,0.37c-0.42-0.04-0.83-0.25-1.13-0.61c-0.29-0.36-0.41-0.8-0.37-1.23 l0-0.03c0.05-0.42,0.25-0.81,0.6-1.1c1.27-1.03,2.59-1.81,3.95-2.34c1.37-0.53,2.77-0.81,4.19-0.81 C73.84,61.67,75.24,61.93,76.61,62.46L76.61,62.46z M74.95,76.09L74.95,76.09L74.95,76.09z M19.03,29.04h1.55V26.9 c0-1.77,0.72-3.37,1.89-4.53l0,0c1.16-1.16,2.77-1.89,4.54-1.89c1.77,0,3.37,0.72,4.53,1.89l0,0c1.16,1.16,1.89,2.77,1.89,4.53 v2.14h1.23c0.27,0,0.5,0.23,0.5,0.5v10.57c0,0.27-0.23,0.5-0.5,0.5H19.02c-0.27,0-0.5-0.23-0.5-0.5V29.54 C18.52,29.26,18.75,29.04,19.03,29.04L19.03,29.04L19.03,29.04L19.03,29.04z M23.07,29.04h7.85v-2.18c0-1.08-0.44-2.06-1.15-2.77 l0,0c-0.71-0.71-1.7-1.15-2.77-1.15c-1.08,0-2.06,0.44-2.77,1.15c-0.71,0.71-1.15,1.7-1.15,2.77V29.04L23.07,29.04L23.07,29.04 L23.07,29.04z M21.26,84.63L9.73,95.93l2.81,1.48l8.65-9.07l8.79,9.07l2.81-1.48L21.26,84.63L21.26,84.63L21.26,84.63z M13.16,98.58L13.16,98.58l8.12-8.12l8.09,8.12l0,0v7.96h-5.91h-4.44h-5.86V98.58L13.16,98.58L13.16,98.58z M20.45,101.19 l-1.07,2.8h3.75l-0.99-2.84c0.63-0.32,1.06-0.97,1.06-1.74c0-1.08-0.88-1.95-1.95-1.95c-1.08,0-1.95,0.88-1.95,1.95 C19.32,100.2,19.79,100.88,20.45,101.19L20.45,101.19L20.45,101.19L20.45,101.19z M108.13,101.39c-0.19,0.09-0.38,0.2-0.57,0.31 c-0.57,0.33-1.13,0.74-1.71,1.21l-1.23-1.4c0.42-0.39,0.88-0.75,1.37-1.07c0.39-0.25,0.79-0.48,1.21-0.67 c0.17-0.08,0.33-0.16,0.5-0.23c-0.81-1.43-1.97-2.46-3.29-3.09c-1.31-0.63-2.79-0.87-4.22-0.74c-1.42,0.14-2.81,0.66-3.96,1.55 c-1.32,1.03-2.33,2.56-2.72,4.59l-0.12,0.64l-0.63,0.11c-0.62,0.11-1.17,0.26-1.66,0.45c-0.47,0.18-0.89,0.41-1.26,0.67 c-0.29,0.21-0.55,0.45-0.76,0.71c-0.67,0.8-0.98,1.8-0.97,2.81c0.01,1.03,0.34,2.07,0.96,2.92c0.23,0.32,0.5,0.61,0.8,0.86 c0.31,0.26,0.66,0.47,1.05,0.63c0.39,0.16,0.81,0.27,1.29,0.34h18.37c0.9-0.22,1.68-0.51,2.35-0.88c0.67-0.37,1.21-0.83,1.62-1.37 c0.63-0.84,0.95-2.04,0.96-3.26c0.02-1.28-0.3-2.57-0.91-3.51c-0.17-0.27-0.37-0.51-0.57-0.73c-0.92-0.99-2.08-1.41-3.28-1.42 C109.89,100.8,108.99,101.01,108.13,101.39L108.13,101.39L108.13,101.39L108.13,101.39z M88.75,20.45 c-0.57-1.22-0.89-2.49-0.88-3.8c0.01-1.31,0.34-2.66,1.07-4.06c0-0.01,0.01-0.02,0.01-0.03l0,0c0.95-1.61,2.28-2.69,3.76-3.29 c1.24-0.51,2.59-0.68,3.91-0.56c1.32,0.12,2.61,0.54,3.74,1.2c1.43,0.85,2.61,2.11,3.26,3.7c0.35,0.86,0.59,1.82,0.62,2.87 c0.03,1.05-0.15,2.18-0.63,3.37l-3.6,5.6l-7.51,1.08c-0.37-1.1-0.96-2.32-1.72-3.2C89.96,22.42,89.28,21.58,88.75,20.45 L88.75,20.45z M93.25,31.2c-0.35-0.96-0.32-1.56-0.62-2.87l7.89-1.17c-0.3,1.4-0.03,2.12-0.24,3.22 C99.63,33.85,94.45,34.41,93.25,31.2L93.25,31.2z M114.15,91.36c-3.24-3.24-7.71-5.24-12.66-5.24s-9.42,2-12.66,5.24 s-5.24,7.72-5.24,12.66s2,9.42,5.24,12.66s7.72,5.24,12.66,5.24s9.42-2,12.66-5.24c3.24-3.24,5.24-7.72,5.24-12.66 S117.39,94.6,114.15,91.36L114.15,91.36z M108.72,8.6c-3.24-3.24-7.71-5.24-12.66-5.24c-4.94,0-9.42,2-12.66,5.24 c-3.24,3.24-5.24,7.71-5.24,12.66s2,9.42,5.24,12.66c3.24,3.24,7.71,5.24,12.66,5.24c4.94,0,9.42-2,12.66-5.24 c3.24-3.24,5.24-7.72,5.24-12.66S111.96,11.84,108.72,8.6L108.72,8.6z M39.73,19.03c-3.24-3.24-7.71-5.24-12.66-5.24 s-9.42,2-12.66,5.24c-3.24,3.24-5.24,7.72-5.24,12.66c0,4.94,2,9.42,5.24,12.66c3.24,3.24,7.71,5.24,12.66,5.24 c4.94,0,9.42-2,12.66-5.24c3.24-3.24,5.24-7.71,5.24-12.66C44.98,26.75,42.97,22.27,39.73,19.03L39.73,19.03z M33.92,82.93 c-3.24-3.24-7.72-5.24-12.66-5.24c-4.94,0-9.42,2-12.66,5.24s-5.24,7.71-5.24,12.66c0,4.94,2,9.42,5.24,12.66 c3.24,3.24,7.71,5.24,12.66,5.24c4.94,0,9.42-2,12.66-5.24c3.24-3.24,5.24-7.71,5.24-12.66C39.17,90.64,37.16,86.17,33.92,82.93 L33.92,82.93z"></path>
-                         </g>
-                       </svg>
-                     </span>
-                   </div>
-                 </div>
-               </div>
-             </div>
-             <div class="col-xl-6 col-lg-6">
-               <div class="row">
-                 <div class="col-12 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".7s" style="visibility: visible; animation-duration: 0.7s; animation-delay: 0.7s; animation-name: tpfadeUp;">
-                   <div class="tp-service-item mb-20 d-flex justify-content-between">
-                     <div class="tp-service-item__content">
-                       <h4 class="tp-service-sm-title">
-                         <a href="services.html">Data Analyse, <br>Data Science et IA</a>
-                       </h4>
-                       <div class="tp-service-item__button-link">
-                         <a href="services.html">
-                           <span>
-                             <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                               <path d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z" fill="currentColor"></path>
-                             </svg>
-                           </span>Découvrir
-                         </a>
-                       </div>
-                     </div>
-                     <div class="tp-service-item__icon">
-                       <span>
-                         <svg width="56" height="56" style="fill: currentColor;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                           <path d="M507.904 264.192c73.728 0 133.12 59.392 133.12 133.12v33.792c-44.032-5.12-89.088-7.168-133.12-7.168-44.032 0-89.088 2.048-133.12 7.168v-33.792c0-72.704 59.392-133.12 133.12-133.12z m241.664 389.12l13.312-116.736c29.696 5.12 52.224 29.696 52.224 57.344 0 32.768-29.696 59.392-65.536 59.392z m-484.352 0c-35.84 0-65.536-26.624-65.536-59.392 0-28.672 22.528-52.224 52.224-57.344l13.312 116.736z m438.272-193.536c-67.584-7.168-132.096-10.24-194.56-10.24s-128 3.072-194.56 10.24c-22.528 2.048-38.912 22.528-35.84 44.032l20.48 198.656c2.048 18.432 16.384 33.792 35.84 35.84 57.344 7.168 115.712 10.24 175.104 10.24s117.76-3.072 175.104-10.24c18.432-2.048 33.792-17.408 35.84-35.84l20.48-198.656c0-22.528-15.36-41.984-37.888-44.032zM395.264 640c-16.384 0-28.672-16.384-28.672-37.888s13.312-37.888 28.672-37.888 28.672 16.384 28.672 37.888-12.288 37.888-28.672 37.888z m171.008 41.984c0 2.048-1.024 4.096-2.048 5.12-1.024 1.024-3.072 2.048-5.12 2.048h-101.376c-2.048 0-4.096-1.024-5.12-2.048-1.024-1.024-2.048-3.072-2.048-5.12v-18.432c0-4.096 3.072-7.168 7.168-7.168h2.048c4.096 0 7.168 3.072 7.168 7.168v9.216h82.944v-9.216c0-4.096 3.072-7.168 7.168-7.168h2.048c4.096 0 7.168 3.072 7.168 7.168v18.432z m54.272-41.984c-16.384 0-28.672-16.384-28.672-37.888s13.312-37.888 28.672-37.888 28.672 16.384 28.672 37.888-12.288 37.888-28.672 37.888z" <="" svg="">
-   
-                       </path></svg></span>
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col-12 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s" style="visibility: visible; animation-duration: 0.7s; animation-delay: 0.9s; animation-name: tpfadeUp;">
-   
-                 </div>
-                 <div class="col-12 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay="1s" style="visibility: visible; animation-duration: 0.7s; animation-delay: 1s; animation-name: tpfadeUp;">
-                   <div class="tp-service-item sv-color-blue-two mb-20 d-flex justify-content-between">
-                     <div class="tp-service-item__content">
-                       <h4 class="tp-service-sm-title">
-                         <a href="services.html">Numérisation des Entreprises</a>
-                       </h4>
-                       <div class="tp-service-item__button-link">
-                         <a href="services.html">
-                           <span>
-                             <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                               <path d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z" fill="currentColor"></path>
-                             </svg>
-                           </span>Découvrir
-                         </a>
-                       </div>
-                     </div>
-                     <div class="tp-service-item__icon">
-                       <span>
-                         <svg width="40" height="40" style="fill: currentColor;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 91.56" xml:space="preserve">
-                           <style type="text/css">
-                             .st0 {
-                               fill-rule: evenodd;
-                               clip-rule: evenodd;
-                             }
-                           </style>
-                           <g>
-                             <path class="st0" d="M2.72,0h94.61c1.5,0,2.72,1.22,2.72,2.72v16.44h-5.77V8.11c0-1.32-1.08-2.4-2.41-2.4H8.18v0 c-1.32,0-2.4,1.08-2.4,2.4v46.25c0,1.32,1.08,2.4,2.4,2.4h60.2v11.35H2.72C1.22,68.11,0,66.89,0,65.4V2.72C0,1.22,1.22,0,2.72,0 L2.72,0L2.72,0L2.72,0z M93,25.49c0.28-0.25,0.68-0.42,1.07-0.42c0.08,0,0.17,0,0.25,0.03h25c0.96,0,1.86,0.39,2.51,1.04 c0.65,0.65,1.04,1.52,1.04,2.51v43.08h-3.16V28.65c0-0.11-0.03-0.2-0.11-0.25c-0.06-0.06-0.14-0.11-0.25-0.11H95.68v13.9 c0,1.32-0.54,2.54-1.41,3.41C93.4,46.46,92.18,47,90.86,47H77.22v41.01c0,0.08,0.03,0.2,0.11,0.25c0.06,0.06,0.14,0.11,0.25,0.11 h41.77c0.08,0,0.2-0.03,0.25-0.11c0.06-0.06,0.11-0.17,0.11-0.25V71.66h3.16v16.35c0,0.99-0.39,1.86-1.04,2.51 c-0.65,0.65-1.52,1.04-2.51,1.04h-41.8c-0.99,0-1.86-0.39-2.51-1.04c-0.65-0.65-1.04-1.52-1.04-2.51V45.79 c-0.03-0.14-0.06-0.25-0.06-0.39c0-0.48,0.23-0.9,0.54-1.21L92.8,25.61c0.06-0.06,0.08-0.08,0.14-0.11L93,25.49L93,25.49L93,25.49z M92.49,42.18V30.54L79.39,43.81h11.47c0.45,0,0.85-0.2,1.16-0.48C92.3,43.05,92.49,42.63,92.49,42.18L92.49,42.18L92.49,42.18z M40.19,29.61L57,26.26l-3.39,5.03c5.44,5.57,11.41,7.5,18.44,5.25c-7.33,9.45-17.31,9.66-25.21,4.79l-3.46,5.13L40.19,29.61 L40.19,29.61L40.19,29.61L40.19,29.61z M62.36,71.87c0.07,4.27,1.82,8.09,6.59,11.1H31.1c3.81-2.77,6.6-6.12,6.59-11.1H62.36 L62.36,71.87z M50.02,58.95c1.93,0,3.49,1.56,3.49,3.49c0,1.93-1.57,3.49-3.49,3.49c-1.93,0-3.49-1.56-3.49-3.49 C46.53,60.52,48.1,58.95,50.02,58.95L50.02,58.95z"></path>
-                           </g>
-                         </svg>
-                       </span>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-           <div class="row">
-             <div class="case-button mt-30 text-center">
-               <a class="tp-btn" href="services.html">Tous Nos Services</a>
-             </div>
-           </div>
-         </div>
-       </div>
-       <div class="tp-case-area case-grident-bg pt-120 pb-120 fix">
-         <div class="container-fluid">
-           <div class="row g-0 justify-content-center">
-             <div class="col-xl-6">
-               <div class="tp-case-title-box mb-60 text-center">
-                 <h3 class="tp-section-subtitle">Nos Conceptions</h3>
-                 <h3 class="tp-section-title-sm">
-                   Découvrir Nos <br> Conceptions
-                 </h3>
-               </div>
-             </div>
-           </div>
-           <div class="tp-case-wrapper">
-             <div class="tp-case-active">
-               <div class="tp-case-item text-center p-relative">
-                 <div class="tp-case-item__thumb fix">
-                   <a href="https://mohindoimages.herokuapp.com/"><img src="assets/img/case/case-3-1.jpg" alt="" /></a>
-                 </div>
-                 <div class="tp-circle-text">
-                   <a href="https://mohindoimages.herokuapp.com/">Mohindo Images</a>
-                 </div>
-               </div>
-               <div class="tp-case-item text-center p-relative">
-                 <div class="tp-case-item__thumb fix">
-                   <a href="details-julisha.html"><img src="assets/img/case/case-3-2.jpg" alt="" /></a>
-                 </div>
-                 <div class="tp-circle-text">
-                   <a href="details-julisha.html">Mr. Julisha</a>
-                 </div>
-               </div>
-               <div class="tp-case-item text-center p-relative">
-                 <div class="tp-case-item__thumb fix">
-                   <a href="https://www.medical.laxtech.pro/"><img src="assets/img/case/case-3-3.jpg" alt="" /></a>
-                 </div>
-                 <div class="tp-circle-text">
-                   <a href="https://www.medical.laxtech.pro/">Lax Medical</a>
-                 </div>
-               </div>
-               <div class="tp-case-item text-center p-relative">
-                 <div class="tp-case-item__thumb fix">
-                   <a href="https://www.market.laxtech.pro/"><img src="assets/img/case/case-3-4.jpg" alt="" /></a>
-                 </div>
-                 <div class="tp-circle-text">
-                   <a href="https://www.market.laxtech.pro/">Lax Market</a>
-                 </div>
-               </div>
-               <div class="tp-case-item text-center p-relative">
-                 <div class="tp-case-item__thumb fix">
-                   <a href="#"><img src="assets/img/case/case-3-5.jpg" alt="" /></a>
-                 </div>
-                 <div class="tp-circle-text">
-                   <a href="#">ima Chat AI</a>
-                 </div>
-               </div>
-               <div class="tp-case-item text-center p-relative">
-                 <div class="tp-case-item__thumb fix">
-                   <a href="https://www.esrudagritech.com/"><img src="assets/img/case/case-3-6.jpg" alt="" /></a>
-                 </div>
-                 <div class="tp-circle-text">
-                   <a href="https://www.esrudagritech.com/">Esrud Agri Tech</a>
-                 </div>
-               </div>
-               <div class="tp-case-item text-center p-relative">
-                 <div class="tp-case-item__thumb fix">
-                   <a href="#"><img src="assets/img/case/case-3-7.jpg" alt="" /></a>
-                 </div>
-                 <div class="tp-circle-text">
-                   <a href="#">zuzuna4africa</a>
-                 </div>
-               </div>
-             </div>
-           </div>
-           <div class="row">
-             <div class="case-button mt-30 text-center">
-               <a class="tp-btn" href="realisation.html">Tous Nos Conceptions</a>
-             </div>
-           </div>
-         </div>
-       </div>
-      <br><br><br>
-      <div hidden class="tp-taem-area pb-80">
-         <div class="container">
-            <div class="row wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
-               <div class="tp-team-section-area text-center mb-60">
-                  <h3 class="tp-section-subtitle">Équipe</h3>
-                  <h4 class="tp-section-title-sm">Notre Équipe</h4>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-xl-3 col-lg-3 col-md-6 mb-60 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".5s">
-                  <div class="tp-team team-inner text-center">
-                     <div class="tp-team-thumb p-relative">
-                        <img src="assets/img/team/team-4.jpg" alt="">
-                        <div class="tp-team-thumb-icon">
-                           <a href="#"><i class="far fa-long-arrow-right"></i></a>
-                        </div>
-                     </div>
-                     <div class="tp-team-content">
-                        <h4 class="tp-team-title"><a href="#">Meldi Akelax</a></h4>
-                        <span>Coordonnateur</span>
-                     </div>
-                     <div class="tp-team-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-3 col-lg-3 col-md-6 mb-60 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".7s">
-                  <div class="tp-team team-inner text-center">
-                     <div class="tp-team-thumb p-relative">
-                        <img src="assets/img/team/team-1.jpg" alt="">
-                        <div class="tp-team-thumb-icon">
-                           <a href="#"><i class="far fa-long-arrow-right"></i></a>
-                        </div>
-                     </div>
-                     <div class="tp-team-content">
-                        <h4 class="tp-team-title"><a href="#">Job Manangu</a></h4>
-                        <span>Community Manager</span>
-                     </div>
-                     <div class="tp-team-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-3 col-lg-3 col-md-6 mb-60 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s">
-                  <div class="tp-team team-inner text-center">
-                     <div class="tp-team-thumb p-relative">
-                        <img src="assets/img/team/profile.jpeg" alt="">
-                        <div class="tp-team-thumb-icon">
-                           <a href="#"><i class="far fa-long-arrow-right"></i></a>
-                        </div>
-                     </div>
-                     <div class="tp-team-content">
-                        <h4 class="tp-team-title"><a href="#">Robert Akany</a></h4>
-                        <span>Développeur Back-End</span>
-                     </div>
-                     <div class="tp-team-social">
-                        <a href="https://www.facebook.com/robert.akany/"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/robbstack21/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://github.com/robertakany"><i class="fab fa-github"></i></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-3 col-lg-3 col-md-6 mb-60 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay="1s">
-                  <div class="tp-team team-inner text-center">
-                     <div class="tp-team-thumb p-relative">
-                        <img src="assets/img/team/team-3.jpg" alt="">
-                        <div class="tp-team-thumb-icon">
-                           <a href="#"><i class="far fa-long-arrow-right"></i></a>
-                        </div>
-                     </div>
-                     <div class="tp-team-content">
-                        <h4 class="tp-team-title"><a href="#">Henock Mukeba</a></h4>
-                        <span>Développeur Front-End</span>
-                     </div>
-                     <div class="tp-team-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </main>
-   <div class="tp-hero-area hero-grideant-bg" data-background="assets/img/slider/slider-grident-bg.png"
-      style="background-image: url(&quot;assets/img/slider/slider-grident-bg.png&quot;);">
-      <div class="container">
+        </section>
 
-         <div class="row">
-            <div class="col-xl-5 col-lg-5 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".3s"
-               style="visibility: visible; animation-duration: 0.7s; animation-delay: 0.3s; animation-name: tpfadeUp;">
-               <div class="tp-slider-exprience">
-                  <div class="tp-slider-exprience__content">
-                     <h4 class="tp-slider-exp-title">Créez l'avenir digital</h4>
-                     <p>“Le succès digital ne consiste pas seulement à suivre les tendances, mais à créer les
-                        innovations qui
-                        façonneront l'avenir.”</p>
-                  </div>
-                  <div class="tp-slider-exprience__client-info d-flex align-items-center">
-                     <div class="tp-slider-exprience__img">
-                        <img src="assets/img/slider/hero-sm-img.png" alt="">
-                     </div>
-                     <div class="tp-slider-exprience__meta">
-                        <h5 class="tp-client-name">Lax Technologies</h5>
-                        <span><i class="fas fa-star"></i> Contactez-nous dès maintenant!</span>
-                     </div>
-                  </div>
-               </div>
+        <section class="pb-16">
+            <div class="container mx-auto max-w-7xl px-6 sm:px-10 lg:px-16 xl:px-20">
+                <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+                    <div class="counter-item border-t border-black/[0.08] pt-6">
+                        <h4><span data-count="100">0</span>+</h4>
+                        <p class="mt-3 text-sm font-semibold tracking-tight text-ink">Clients Satisfaits</p>
+                    </div>
+                    <div class="counter-item border-t border-black/[0.08] pt-6">
+                        <h4><span data-count="20">0</span>+</h4>
+                        <p class="mt-3 text-sm font-semibold tracking-tight text-ink">Projets en Ligne</p>
+                    </div>
+                    <div class="counter-item border-t border-black/[0.08] pt-6">
+                        <h4><span data-count="15">0</span>+</h4>
+                        <p class="mt-3 text-sm font-semibold tracking-tight text-ink">Applications</p>
+                    </div>
+                    <div class="counter-item border-t border-black/[0.08] pt-6">
+                        <h4><span data-count="10">0</span>+</h4>
+                        <p class="mt-3 text-sm font-semibold tracking-tight text-ink">Projects IOT</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-xl-7 col-lg-7">
-               <div class="row">
-                  <div class="col-xl-6 col-lg-6 col-md-6 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".5s"
-                     style="visibility: visible; animation-duration: 0.7s; animation-delay: 0.5s; animation-name: tpfadeUp;">
-                     <div class="tp-slider-exp-item mb-30">
-                        <div class="tp-slider-exp-item__icon icon-bg-green">
-                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <g clip-path="url(#clip0_289_84)">
-                                 <path
-                                    d="M23.2969 0H20.4375C20.0489 0 19.7344 0.314484 19.7344 0.703125V1.40625H13.9799C13.6886 0.589594 12.9155 0 12 0C11.0845 0 10.3114 0.589594 10.0201 1.40625H4.26562V0.703125C4.26562 0.314484 3.95114 0 3.5625 0H0.703125C0.314484 0 0 0.314484 0 0.703125V3.51562C0 3.90427 0.314484 4.21875 0.703125 4.21875H3.5625C3.95114 4.21875 4.26562 3.90427 4.26562 3.51562V2.80312H7.15331C4.71314 4.32755 3.10416 7.005 2.91183 10.0038C2.06817 10.28 1.45312 11.0653 1.45312 12C1.45312 13.1632 2.39934 14.1094 3.5625 14.1094C4.72566 14.1094 5.67188 13.1632 5.67188 12C5.67188 11.1028 5.10652 10.34 4.31531 10.0356C4.55522 6.69225 6.88809 3.87431 10.1331 3.07031C10.4841 3.74892 11.1847 4.21875 12 4.21875C12.8153 4.21875 13.5159 3.74892 13.8669 3.07031C17.1119 3.87427 19.4448 6.6922 19.6847 10.0356C18.8935 10.34 18.3281 11.1028 18.3281 12C18.3281 13.1632 19.2743 14.1094 20.4375 14.1094C21.6007 14.1094 22.5469 13.1632 22.5469 12C22.5469 11.0653 21.9318 10.28 21.0882 10.0038C20.8958 7.005 19.2869 4.33692 16.8467 2.8125H19.7344V3.51562C19.7344 3.90427 20.0489 4.21875 20.4375 4.21875H23.2969C23.6855 4.21875 24 3.90427 24 3.51562V0.703125C24 0.314484 23.6855 0 23.2969 0Z"
-                                    fill="currentColor"></path>
-                                 <path
-                                    d="M16.7835 23.1279C16.4157 22.0025 15.3561 21.1406 14.1093 21.1406H9.89052C8.64365 21.1406 7.58408 22.0025 7.2163 23.1279C7.07451 23.5618 7.44365 24 7.90021 24H16.0996C16.5561 24 16.9253 23.5618 16.7835 23.1279Z"
-                                    fill="currentColor"></path>
-                                 <path
-                                    d="M18.21 14.4225L12.7031 6.16217V12.8327C13.5198 13.1239 14.1094 13.8971 14.1094 14.8125C14.1094 15.9757 13.1632 16.9219 12 16.9219C10.8369 16.9219 9.89063 15.9757 9.89063 14.8125C9.89063 13.8971 10.4802 13.1239 11.2969 12.8327V6.16217L5.79001 14.4225C5.60391 14.7013 5.64099 15.0728 5.8779 15.3097C7.16869 16.6005 7.99379 18.2634 8.31221 20.0471C8.80065 19.849 9.33188 19.7344 9.89063 19.7344H14.1094C14.6681 19.7344 15.1994 19.8489 15.6878 20.047C16.0062 18.2632 16.8313 16.6005 18.1221 15.3097C18.359 15.0728 18.3961 14.7013 18.21 14.4225Z"
-                                    fill="currentColor"></path>
-                                 <path
-                                    d="M12 14.1094C11.6121 14.1094 11.2969 14.4246 11.2969 14.8125C11.2969 15.2004 11.6121 15.5156 12 15.5156C12.3879 15.5156 12.7031 15.2004 12.7031 14.8125C12.7031 14.4246 12.3879 14.1094 12 14.1094Z"
-                                    fill="currentColor"></path>
-                              </g>
-                              <defs>
-                                 <clipPath id="clip0_289_84">
-                                    <rect width="24" height="24" fill="currentColor"></rect>
-                                 </clipPath>
-                              </defs>
-                           </svg>
-                        </div>
-                        <div class="tp-slider-exp-item__content">
-                           <h4 class="tp-exp-sm-title">Besoin d'aide ou de support ?</h4>
-                        </div>
-                        <div class="tp-slider-exp-item__service-link">
-                           <div class="tp-link tp-link-green">
-                              <a href="services.html">
-                                 <svg width="34" height="16" viewBox="0 0 34 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                       d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z"
-                                       fill="#202026"></path>
-                                 </svg>
-                                 <span>Nous Contacter</span>
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".7s"
-                     style="visibility: visible; animation-duration: 0.7s; animation-delay: 0.7s; animation-name: tpfadeUp;">
-                     <div class="tp-slider-exp-item mb-30">
-                        <div class="tp-slider-exp-item__icon">
-                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <g clip-path="url(#clip0_289_84)">
-                                 <path
-                                    d="M23.2969 0H20.4375C20.0489 0 19.7344 0.314484 19.7344 0.703125V1.40625H13.9799C13.6886 0.589594 12.9155 0 12 0C11.0845 0 10.3114 0.589594 10.0201 1.40625H4.26562V0.703125C4.26562 0.314484 3.95114 0 3.5625 0H0.703125C0.314484 0 0 0.314484 0 0.703125V3.51562C0 3.90427 0.314484 4.21875 0.703125 4.21875H3.5625C3.95114 4.21875 4.26562 3.90427 4.26562 3.51562V2.80312H7.15331C4.71314 4.32755 3.10416 7.005 2.91183 10.0038C2.06817 10.28 1.45312 11.0653 1.45312 12C1.45312 13.1632 2.39934 14.1094 3.5625 14.1094C4.72566 14.1094 5.67188 13.1632 5.67188 12C5.67188 11.1028 5.10652 10.34 4.31531 10.0356C4.55522 6.69225 6.88809 3.87431 10.1331 3.07031C10.4841 3.74892 11.1847 4.21875 12 4.21875C12.8153 4.21875 13.5159 3.74892 13.8669 3.07031C17.1119 3.87427 19.4448 6.6922 19.6847 10.0356C18.8935 10.34 18.3281 11.1028 18.3281 12C18.3281 13.1632 19.2743 14.1094 20.4375 14.1094C21.6007 14.1094 22.5469 13.1632 22.5469 12C22.5469 11.0653 21.9318 10.28 21.0882 10.0038C20.8958 7.005 19.2869 4.33692 16.8467 2.8125H19.7344V3.51562C19.7344 3.90427 20.0489 4.21875 20.4375 4.21875H23.2969C23.6855 4.21875 24 3.90427 24 3.51562V0.703125C24 0.314484 23.6855 0 23.2969 0Z"
-                                    fill="currentColor"></path>
-                                 <path
-                                    d="M16.7835 23.1279C16.4157 22.0025 15.3561 21.1406 14.1093 21.1406H9.89052C8.64365 21.1406 7.58408 22.0025 7.2163 23.1279C7.07451 23.5618 7.44365 24 7.90021 24H16.0996C16.5561 24 16.9253 23.5618 16.7835 23.1279Z"
-                                    fill="currentColor"></path>
-                                 <path
-                                    d="M18.21 14.4225L12.7031 6.16217V12.8327C13.5198 13.1239 14.1094 13.8971 14.1094 14.8125C14.1094 15.9757 13.1632 16.9219 12 16.9219C10.8369 16.9219 9.89063 15.9757 9.89063 14.8125C9.89063 13.8971 10.4802 13.1239 11.2969 12.8327V6.16217L5.79001 14.4225C5.60391 14.7013 5.64099 15.0728 5.8779 15.3097C7.16869 16.6005 7.99379 18.2634 8.31221 20.0471C8.80065 19.849 9.33188 19.7344 9.89063 19.7344H14.1094C14.6681 19.7344 15.1994 19.8489 15.6878 20.047C16.0062 18.2632 16.8313 16.6005 18.1221 15.3097C18.359 15.0728 18.3961 14.7013 18.21 14.4225Z"
-                                    fill="currentColor"></path>
-                                 <path
-                                    d="M12 14.1094C11.6121 14.1094 11.2969 14.4246 11.2969 14.8125C11.2969 15.2004 11.6121 15.5156 12 15.5156C12.3879 15.5156 12.7031 15.2004 12.7031 14.8125C12.7031 14.4246 12.3879 14.1094 12 14.1094Z"
-                                    fill="currentColor"></path>
-                              </g>
-                              <defs>
-                                 <clipPath>
-                                    <rect width="24" height="24" fill="currentColor"></rect>
-                                 </clipPath>
-                              </defs>
-                           </svg>
-                        </div>
-                        <div class="tp-slider-exp-item__content">
-                           <h4 class="tp-exp-sm-title">Pourquoi choisir Lax Technologies ?</h4>
-                        </div>
-                        <div class="tp-slider-exp-item__service-link">
-                           <div class="tp-link">
-                              <a href="about.html">
-                                 <svg width="34" height="16" viewBox="0 0 34 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                       d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM-8.74228e-08 9L33 9L33 7L8.74228e-08 7L-8.74228e-08 9Z"
-                                       fill="#202026"></path>
-                                 </svg>
-                                 <span>Découvrir</span>
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   </main>
-   <footer>
-      <!-- tp-footer-area-start -->
-      <div class="tp-footer-area pb-30 black-bg p-relative">
-         <div class="container">
-            <div class="footer-border-top pt-70">
-               <div class="footer-scroll scroll-to-target-2" data-target="html">
-                  <button><i class="far fa-arrow-up"></i></button>
-               </div>
-               <div class="row">
-                  <div class="col-md-2">
-                     <div class="tp-footer-widget z-index-3">
-                        <div class="tp-footer-widget__title">
-                           <h4 class="tp-footer-title">Produits</h4>
-                        </div>
-                        <div class="tp-footer-widget__list">
-                           <ul>
-                              <li><a href="https://www.medical.laxtech.pro/">Lax Medical</a></li>
-                              <li><a href="https://www.market.laxtech.pro/">Lax Market</a></li>
-                              <li><a href="#">I.M.A AI</a></li>
-                              <li><a href="http://mr.julishaafrica.com/">Mr.Julisha</a></li>
-                              <li><a href="https://www.esrudagritech.com/">Esrud Agri Tech</a></li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="tp-footer-widget footer-space-one z-index-3">
-                        <div class="tp-footer-widget__title">
-                           <h4 class="tp-footer-title">Services</h4>
-                        </div>
-                        <div class="tp-footer-widget__list">
-                           <ul>
-                              <li><a href="services.html">Développement Web/Mobile</a></li>
-                              <li><a href="services.html">Développement Desktop</a></li>
-                              <li><a href="services.html">Mise à Jour et Maintenance</a></li>
-                              <li><a href="services.html">Consultance IA</a></li>
-                              <li><a href="services.html">Consultance IOT</a></li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-3">
-                     <div class="tp-footer-widget footer-space-two z-index-3">
-                        <div class="tp-footer-widget__title">
-                           <h4 class="tp-footer-title">Navigation</h4>
-                        </div>
-                        <div class="tp-footer-widget__list">
-                           <ul>
-                              <li><a href="index.html">Accueil</a></li>
-                              <li><a href="blog-details.html">Services</a></li>
-                              <li><a href="realisation.html">Réalisations</a></li>
-                              <li><a href="about.html">A Propos</a></li>
-                              <li><a href="contact.html">Contact</a></li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
+        </section>
 
-                  <div class="col-md-3">
-                     <div class="tp-footer-widget z-index-3">
-                        <div class="tp-footer-widget__title">
-                           <h4 class="tp-footer-title">Contacts</h4>
-                        </div>
-                        <div class="tp-footer-widget__list">
-                           <ul class="footer-position">
-                              <li><a href="https://www.google.com/maps/place/Laxtech+(Lax+technologies)+est+une+Soci%C3%A9t%C3%A9+par+Action+Simplifi%C3%A9e+(S.A.S)/@-4.3075683,15.3214008,15z/data=!4m6!3m5!1s0x1a6a340e8c679b65:0x574ef77b1f6a19f4!8m2!3d-4.3075683!4d15.3214008!16s%2Fg%2F11sc7j0g5j?entry=ttu"
-                                    target="_blank">
-                                    <span><i class="fal fa-map-marker-alt"></i></span>
-                                    Concession Procoki N°1 OUA.</a>
-                              </li>
-                              <li><a href="mailto:contact@laxtech.pro">
-                                    <span><i class="fal fa-envelope"></i></span>contact@laxtech.pro</a>
-                              </li>
-                              <li><a href="tel:+243810843164">
-                                    <span><i class="fal fa-phone-alt"></i></span>+243 810 843 164</a>
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+        <section class="pb-20">
+            <div class="container mx-auto max-w-7xl px-6 sm:px-10 lg:px-16 xl:px-20">
+                <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+                    <div class="order-2 lg:order-1">
+                        <img src="assets/img/about/Presentation 2.jpg" alt="" class="w-full rounded-[28px] object-cover shadow-lift" />
+                    </div>
+                    <div class="ab-inner-content order-1 lg:order-2">
+                        <p class="mb-4 text-[11px] font-semibold uppercase tracking-[0.22em] text-muted">Mission</p>
+                        <h2 class="text-3xl font-semibold tracking-[-0.03em] sm:text-4xl">Notre Mission et Objectif</h2>
+                        <p class="mt-6 max-w-[62ch] text-base leading-8 text-muted">
+                            Notre mission est d'offrir des <strong>services digitales innovantes</strong> et sur mesure à nos clients, les aidant ainsi à prospérer dans le monde du numérique et de développer des solutions qui répondent aux problèmes réels de la société. <br><br>
+                            En tant que partenaire de confiance, notre objectif est de fournir des résultats exceptionnels, de repousser les limites de l'innovation et de contribuer activement à la croissance et au progrès technologique en <b>République démocratique du Congo</b> et en <b>Afrique</b> en exploitant les opportunités offertes par la révolution numérique.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <br><br><br>
-            <div class="copy-right-wrapper footer-border-top pt-40 z-index-3">
-               <div class="row">
-                  <div class="col-xl-6 col-lg-7 col-12">
-                     <div class="copyright-left text-center text-lg-start">
-                        <p>Copyright © 2023, Lax Technologies. Tout droits réservés</p>
-                     </div>
-                  </div>
-               </div>
+        </section>
+
+        <section class="pb-20">
+            <div class="container mx-auto max-w-7xl px-6 sm:px-10 lg:px-16 xl:px-20">
+                <div class="section-header mx-auto mb-12 max-w-xl text-center">
+                    <p class="mb-4 text-[11px] font-semibold uppercase tracking-[0.22em] text-muted">Nos Services</p>
+                    <h2 class="text-3xl font-semibold tracking-[-0.03em] sm:text-4xl">Découvrez Nos Différents Services</h2>
+                </div>
+                <div class="grid gap-x-10 gap-y-2 md:grid-cols-2">
+                    <article class="tp-service-item flex items-center justify-between gap-4 border-t border-black/[0.08] py-6">
+                        <div class="tp-service-item__content">
+                            <h3 class="text-lg font-semibold tracking-tight"><a href="services.html">Développement Informatique</a></h3>
+                        </div>
+                        <a class="inline-flex items-center gap-2 text-[13px] font-medium tracking-wide text-muted hover:text-ink" href="services.html">
+                            <span>Découvrir</span>
+                            <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM0 9L33 9L33 7L0 7L0 9Z" fill="currentColor"></path></svg>
+                        </a>
+                    </article>
+                    <article class="tp-service-item flex items-center justify-between gap-4 border-t border-black/[0.08] py-6">
+                        <div class="tp-service-item__content">
+                            <h3 class="text-lg font-semibold tracking-tight"><a href="services.html">Développement IOT</a></h3>
+                        </div>
+                        <a class="inline-flex items-center gap-2 text-[13px] font-medium tracking-wide text-muted hover:text-ink" href="services.html">
+                            <span>Découvrir</span>
+                            <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM0 9L33 9L33 7L0 7L0 9Z" fill="currentColor"></path></svg>
+                        </a>
+                    </article>
+                    <article class="tp-service-item flex items-center justify-between gap-4 border-t border-black/[0.08] py-6">
+                        <div class="tp-service-item__content">
+                            <h3 class="text-lg font-semibold tracking-tight"><a href="services.html">Data Analyse, Data Science et IA</a></h3>
+                        </div>
+                        <a class="inline-flex items-center gap-2 text-[13px] font-medium tracking-wide text-muted hover:text-ink" href="services.html">
+                            <span>Découvrir</span>
+                            <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM0 9L33 9L33 7L0 7L0 9Z" fill="currentColor"></path></svg>
+                        </a>
+                    </article>
+                    <article class="tp-service-item flex items-center justify-between gap-4 border-t border-black/[0.08] py-6">
+                        <div class="tp-service-item__content">
+                            <h3 class="text-lg font-semibold tracking-tight"><a href="services.html">Numérisation des Entreprises</a></h3>
+                        </div>
+                        <a class="inline-flex items-center gap-2 text-[13px] font-medium tracking-wide text-muted hover:text-ink" href="services.html">
+                            <span>Découvrir</span>
+                            <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM0 9L33 9L33 7L0 7L0 9Z" fill="currentColor"></path></svg>
+                        </a>
+                    </article>
+                </div>
+                <div class="mt-10 text-center">
+                    <a class="inline-flex h-11 items-center rounded-full bg-brand px-6 text-[13px] font-semibold tracking-wide text-white hover:bg-brand-hover" href="services.html">Tous Nos Services</a>
+                </div>
             </div>
-         </div>
-      </div>
-   </footer>
-   <script src="assets/js/jquery.js"></script>
-   <script src="assets/js/waypoints.js"></script>
-   <script src="assets/js/bootstrap.bundle.min.js"></script>
-   <script src="assets/js/swiper-bundle.js"></script>
-   <script src="assets/js/slick.js"></script>
-   <script src="assets/js/magnific-popup.js"></script>
-   <script src="assets/js/counterup.js"></script>
-   <script src="assets/js/wow.js"></script>
-   <script src="assets/js/nice-select.js"></script>
-   <script src="assets/js/meanmenu.js"></script>
-   <script src="assets/js/isotope-pkgd.js"></script>
-   <script src="assets/js/imagesloaded-pkgd.js"></script>
-   <script src="assets/js/ajax-form.js"></script>
-   <script src="assets/js/main.js"></script>
+        </section>
+
+        <section hidden class="pb-20">
+            <div class="container mx-auto max-w-7xl px-6 sm:px-10 lg:px-16 xl:px-20">
+                <div class="section-header mb-12 text-center">
+                    <p class="mb-4 text-[11px] font-semibold uppercase tracking-[0.22em] text-muted">Équipe</p>
+                    <h2 class="text-3xl font-semibold tracking-[-0.03em] sm:text-4xl">Notre Équipe</h2>
+                </div>
+                <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+                    <article class="rounded-[28px] border border-black/[0.08] p-5 text-center">
+                        <img src="assets/img/team/team-4.jpg" alt="" class="h-64 w-full rounded-[24px] object-cover" />
+                        <h3 class="mt-5 text-lg font-semibold tracking-tight">Meldi Akelax</h3>
+                        <p class="mt-1 text-sm text-muted">Coordonnateur</p>
+                    </article>
+                    <article class="rounded-[28px] border border-black/[0.08] p-5 text-center">
+                        <img src="assets/img/team/team-1.jpg" alt="" class="h-64 w-full rounded-[24px] object-cover" />
+                        <h3 class="mt-5 text-lg font-semibold tracking-tight">Job Manangu</h3>
+                        <p class="mt-1 text-sm text-muted">Community Manager</p>
+                    </article>
+                    <article class="rounded-[28px] border border-black/[0.08] p-5 text-center">
+                        <img src="assets/img/team/profile.jpeg" alt="" class="h-64 w-full rounded-[24px] object-cover" />
+                        <h3 class="mt-5 text-lg font-semibold tracking-tight">Robert Akany</h3>
+                        <p class="mt-1 text-sm text-muted">Développeur Back-End</p>
+                    </article>
+                    <article class="rounded-[28px] border border-black/[0.08] p-5 text-center">
+                        <img src="assets/img/team/team-3.jpg" alt="" class="h-64 w-full rounded-[24px] object-cover" />
+                        <h3 class="mt-5 text-lg font-semibold tracking-tight">Henock Mukeba</h3>
+                        <p class="mt-1 text-sm text-muted">Développeur Front-End</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24">
+            <div class="container mx-auto max-w-7xl px-6 sm:px-10 lg:px-16 xl:px-20">
+                <div class="grid gap-8 lg:grid-cols-12">
+                    <div class="lg:col-span-5">
+                        <div class="tp-slider-exprience">
+                            <div class="tp-slider-exprience__content">
+                                <h2 class="text-3xl font-semibold tracking-[-0.03em]">Créez l'avenir digital</h2>
+                                <p class="mt-4 text-muted">“Le succès digital ne consiste pas seulement à suivre les tendances, mais à créer les innovations qui façonneront l'avenir.”</p>
+                            </div>
+                            <div class="tp-slider-exprience__client-info mt-8 flex items-center gap-4">
+                                <div class="tp-slider-exprience__img">
+                                    <img src="assets/img/slider/hero-sm-img.png" alt="" class="h-14 w-14 rounded-full object-cover" />
+                                </div>
+                                <div class="tp-slider-exprience__meta">
+                                    <h3 class="font-semibold">Lax Technologies</h3>
+                                    <span class="text-sm text-brand"><i class="fas fa-star"></i> Contactez-nous dès maintenant!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-7 grid gap-4 sm:grid-cols-2">
+                        <div class="tp-slider-exp-item border-t border-black/[0.08] py-7">
+                            <div class="tp-slider-exp-item__icon mb-5 text-ink/30">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l2.2 6.8H21l-5.6 4.1 2.2 6.8L12 15.6 6.4 19.7l2.2-6.8L3 8.8h6.8L12 2z" fill="currentColor"></path></svg>
+                            </div>
+                            <div class="tp-slider-exp-item__content">
+                                <h4 class="text-xl font-semibold tracking-tight">Besoin d'aide ou de support ?</h4>
+                            </div>
+                            <div class="tp-slider-exp-item__service-link mt-6">
+                                <a class="inline-flex items-center gap-2 text-[13px] font-medium text-muted hover:text-ink" href="contact.html">
+                                    <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM0 9L33 9L33 7L0 7L0 9Z" fill="currentColor"></path></svg>
+                                    <span>Nous Contacter</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tp-slider-exp-item border-t border-black/[0.08] py-7">
+                            <div class="tp-slider-exp-item__icon mb-5 text-ink/30">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l2.2 6.8H21l-5.6 4.1 2.2 6.8L12 15.6 6.4 19.7l2.2-6.8L3 8.8h6.8L12 2z" fill="currentColor"></path></svg>
+                            </div>
+                            <div class="tp-slider-exp-item__content">
+                                <h4 class="text-xl font-semibold tracking-tight">Pourquoi choisir Lax Technologies ?</h4>
+                            </div>
+                            <div class="tp-slider-exp-item__service-link mt-6">
+                                <a class="inline-flex items-center gap-2 text-[13px] font-medium text-muted hover:text-ink" href="about.html">
+                                    <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.7071 8.70711C34.0976 8.31659 34.0976 7.68342 33.7071 7.2929L27.3431 0.928935C26.9526 0.53841 26.3195 0.53841 25.9289 0.928934C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM0 9L33 9L33 7L0 7L0 9Z" fill="currentColor"></path></svg>
+                                    <span>Découvrir</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="tp-footer-area black-bg relative bg-ink pb-10 text-white">
+            <div class="container mx-auto max-w-7xl px-6 sm:px-10 lg:px-16 xl:px-20">
+                <div class="footer-border-top border-t border-white/10 pt-16">
+                    <div class="footer-scroll scroll-to-target-2 mb-8" data-target="html">
+                        <button class="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-transparent" type="button"><i class="far fa-arrow-up"></i></button>
+                    </div>
+                    <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+                        <div>
+                            <div class="tp-footer-widget">
+                                <div class="tp-footer-widget__title">
+                                    <h4 class="tp-footer-title mb-5 text-[13px] font-semibold uppercase tracking-[0.16em] text-white/45">Produits</h4>
+                                </div>
+                                <div class="tp-footer-widget__list">
+                                    <ul class="space-y-2 text-sm text-white/65">
+                                        <li><a class="hover:text-white" href="https://www.medical.laxtech.pro/">Lax Medical</a></li>
+                                        <li><a class="hover:text-white" href="https://www.market.laxtech.pro/">Lax Market</a></li>
+                                        <li><a class="hover:text-white" href="https://ai.laxtech.pro" target="_blank" rel="noopener">Lax AI Lab</a></li>
+                                        <li><a class="hover:text-white" href="http://mr.julishaafrica.com/">Mr.Julisha</a></li>
+                                        <li><a class="hover:text-white" href="https://www.esrudagritech.com/">Esrud Agri Tech</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tp-footer-widget footer-space-one">
+                                <div class="tp-footer-widget__title">
+                                    <h4 class="tp-footer-title mb-5 text-[13px] font-semibold uppercase tracking-[0.16em] text-white/45">Services</h4>
+                                </div>
+                                <div class="tp-footer-widget__list">
+                                    <ul class="space-y-2 text-sm text-white/65">
+                                        <li><a class="hover:text-white" href="services.html">Développement Web/Mobile</a></li>
+                                        <li><a class="hover:text-white" href="services.html">Développement Desktop</a></li>
+                                        <li><a class="hover:text-white" href="services.html">Mise à Jour et Maintenance</a></li>
+                                        <li><a class="hover:text-white" href="services.html">Consultance IA</a></li>
+                                        <li><a class="hover:text-white" href="services.html">Consultance IOT</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tp-footer-widget footer-space-two">
+                                <div class="tp-footer-widget__title">
+                                    <h4 class="tp-footer-title mb-5 text-[13px] font-semibold uppercase tracking-[0.16em] text-white/45">Navigation</h4>
+                                </div>
+                                <div class="tp-footer-widget__list">
+                                    <ul class="space-y-2 text-sm text-white/65">
+                                        <li><a class="hover:text-white" href="index.html">Accueil</a></li>
+                                        <li><a class="hover:text-white" href="services.html">Services</a></li>
+                                        <li><a class="hover:text-white" href="realisation.html">Réalisations</a></li>
+                                        <li><a class="hover:text-white" href="about.html">A Propos</a></li>
+                                        <li><a class="hover:text-white" href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tp-footer-widget">
+                                <div class="tp-footer-widget__title">
+                                    <h4 class="tp-footer-title mb-5 text-[13px] font-semibold uppercase tracking-[0.16em] text-white/45">Contacts</h4>
+                                </div>
+                                <div class="tp-footer-widget__list">
+                                    <ul class="footer-position space-y-3 text-sm text-white/65">
+                                        <li><a class="hover:text-white" href="https://www.google.com/maps/place/Laxtech+(Lax+technologies)+est+une+Soci%C3%A9t%C3%A9+par+Action+Simplifi%C3%A9e+(S.A.S)/@-4.3075683,15.3214008,15z/data=!4m6!3m5!1s0x1a6a340e8c679b65:0x574ef77b1f6a19f4!8m2!3d-4.3075683!4d15.3214008!16s%2Fg%2F11sc7j0g5j?entry=ttu" target="_blank"><span><i class="fal fa-map-marker-alt"></i></span> Concession Procoki N°1 OUA.</a></li>
+                                        <li><a class="hover:text-white" href="mailto:contact@laxtech.pro"><span><i class="fal fa-envelope"></i></span>Contact@Laxtech.pro</a></li>
+                                        <li><a class="hover:text-white" href="tel:+243810843164"><span><i class="fal fa-phone-alt"></i></span>+243 810 843 164</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br class="hidden"><br class="hidden"><br class="hidden">
+                <div class="copy-right-wrapper footer-border-top mt-12 border-t border-white/10 pt-6">
+                    <div class="copyright-left text-center text-sm text-white/50 lg:text-left">
+                        <p>Copyright © 2026, Lax Technologies. Tous droits réservés</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/home.js"></script>
 </body>
 
 </html>
